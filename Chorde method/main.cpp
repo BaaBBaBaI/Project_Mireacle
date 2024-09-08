@@ -5,7 +5,7 @@
 #include <fstream>
 
 
-float f(float x) {
+float f(float x) {  
     float formula = pow(0.25 * x, 3) + x - 2;
     return formula;
 }
