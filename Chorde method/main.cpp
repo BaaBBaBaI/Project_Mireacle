@@ -11,16 +11,17 @@ float f(float x) {
 }
 
 std::pair<int, float> chordMethod(float ast, float bnd) {
-    // std::ofstream MyFile("info.txt");x
+    // std::ofstream MyFile("info.txt");
     static int time = 0;
-    float xc = 10000;
-    gay:
+    float xc;
+    do {
         xc = ast - (f(ast) * (bnd - ast) / (f(bnd) - f(ast)));
             // MyFile << xc << "\n";
         if (f(ast) * f(xc) > 0) {ast = xc;} else {bnd = xc;}
         time++;
         // MyFile << time << " " << ast << " " << bnd << " " << xc << std::endl;
-    if ((std::abs(bnd - ast) / xc) > 0.0001) { goto gay; }
+    
+    } while ((std::abs(bnd - ast) / xc) > 0.0001);
     return std::make_pair(time, xc);
 }
 
