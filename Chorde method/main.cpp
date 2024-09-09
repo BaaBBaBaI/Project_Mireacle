@@ -11,39 +11,43 @@ float f(float x) {
 }
 
 std::pair<int, float> chordMethod(float ast, float bnd) {
-    std::ofstream MyFile("info.txt");
+    // std::ofstream MyFile("info.txt");
     static int time = 0;
     float xc = 10000;
     gay:
         xc = ast - f(ast) * (bnd - ast) / (f(bnd) - f(ast));
-            MyFile << xc << "\n";
+            // MyFile << xc << "\n";
             ast = xc;
             time++;
-            MyFile << time << " " << ast << " " << bnd << " " << xc << std::endl;
+            // MyFile << time << " " << ast << " " << bnd << " " << xc << std::endl;
     if (std::abs(xc - ast) > 0.0001) { goto gay; }
     return std::make_pair(time, xc);
 }
+
+
+std::pair<float, float> nonChordMethod(float ast, float bnd) {
+    float xc = 0, fxc = 0;
+    float fast = f(ast); float fbnd = f(bnd);
+    do {
+        xc = (ast + bnd) / 2;
+        fxc = f(xc);
+        if (fxc * fast > 0) { ast = xc; fast = fxc; } else { bnd = xc; fbnd = fxc; }
+    } while (0.0000001 < fabs((bnd - ast) / 2));
+    return std::make_pair(xc, fxc);
+}
+
 
 int main() {
 
     float ast = 0; float bnd = 20;
     std::pair<int, float> chan;
+    std::pair<float, float> opa;
     
     chan = chordMethod(ast, bnd);
+    opa = nonChordMethod(ast, bnd);
 
-    std::cout << "answer: " << chan.first << " " << chan.second;
+    std::cout << "Non chord method answer: " << opa.first << " " << opa.second << std::endl;
+    std::cout << "Chord method answer: " << chan.first << " " << chan.second << std::endl;
 
     return 0;
 }
-
-
-// std::pair<int, float> nonChordMethod(float ast, float bnd) {
-//     std::ofstream MyFile("info_non_chord.txt");
-//     int time = 0;
-//     float xc = 1;
-// while (fabs((bnd - ast)/xc) > 0.0001) {
-//     xc = (ast + bnd)/2;
-//     if (f(xc) * f(ast) > 0) {
-//         ast = xc;
-//         f(ast);
-//     }
