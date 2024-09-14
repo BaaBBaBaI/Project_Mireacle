@@ -1,30 +1,45 @@
 #include <iostream>
+#include <string>
 
-void simplecalc(float a, float b, char d) {
+
+bool strnum(const std::string& str) {
+    for (char c : str) {
+        if (!std::isdigit(c)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+float simplecalc(float a, float b, char d) {
     switch (d)
     {
-    case ('+' || ' '):
-        std::cout << (a + b);
-        // return (a + b);
+    case '+':
+        return (a + b);
         break;
 
     case '-' :
-        std::cout << (a - b);
+        return (a - b);
         break;
 
     case '/' :
-        std::cout << (a / b);
+        return (a / b);
         break;
     
     case '*' : 
-        std::cout << (a * b);
+        return (a * b);
+        break;
     
     default:
+        return 0;
         break;
     }
 
 
 }
+
+float simplecalc(float a, float b) { return (a * b); }
 
 int platiti(float a, float b) {
     int time;
@@ -55,11 +70,13 @@ void tatyana(int a, int b) { // IS FINISHED
 }
 
 int main() {
-    float a, b;
+    float a, b, ans = 10;
     int nd, st;
-    char d;
-    std::cin >> a >> d >> b;
-    simplecalc(a, b, d);
+    std::string d;
+    std::cin >> a >> d;
+    if (!strnum(d)) { std::cin >> b; ans = simplecalc(a, b, d[0]);}
+    else { ans = simplecalc(a, std::stoi(d)); }
+    std::cout << ans << std::endl;
     // int c = platiti(a, b);
     // std::cout << c;
     // tatyana(a, b);
