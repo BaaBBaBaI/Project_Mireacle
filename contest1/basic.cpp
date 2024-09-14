@@ -3,7 +3,7 @@
 void simplecalc(float a, float b, char d) {
     switch (d)
     {
-    case '+' :
+    case ('+' || ' '):
         std::cout << (a + b);
         // return (a + b);
         break;
@@ -33,7 +33,7 @@ int platiti(float a, float b) {
 
 }
 
-void tatyana(int a, int b) { // ISNT FINISHED
+void tatyana(int a, int b) { // IS FINISHED
     do {
         switch (a % 2) {
         case 0:
@@ -42,12 +42,15 @@ void tatyana(int a, int b) { // ISNT FINISHED
             break;
         case 1:
             std::cout << "-1" << std::endl;
+            a = a - 1;
+            break;
         
         default:
             break;
         }
 
-    } while (true);
+    } while ((a / 2) > b);
+    while (a > b) { a--; std::cout << "-1" << std::endl;}
 
 }
 
@@ -55,9 +58,10 @@ int main() {
     float a, b;
     int nd, st;
     char d;
-    std::cin >> a >> b;
-    // simplecalc(a, b, d);
-    int c = platiti(a, b);
-    std::cout << c;
+    std::cin >> a >> d >> b;
+    simplecalc(a, b, d);
+    // int c = platiti(a, b);
+    // std::cout << c;
+    // tatyana(a, b);
     return 0;
 }
