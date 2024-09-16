@@ -97,23 +97,28 @@ int kfc(int a) {
         std::cin >> b;
         ab.push_back(b);
     }
+    ab.push_back(100);
     if (ab.size() < 2) { return 0; }
     while (ab.size() >= 2 ) {
-    if ((ab.size() == 2) && (ab[0] == ab[1])) {return count + 2;} else if (ab.size() == 2) { return count;}
-    for (int i = 1; i < ab.size() - 1; i++) {
-        if (ab[i] == ab[i-1] ) {
-            std::cout << "Condition met on line: " << __LINE__ << " " << __FILE__ << ab.size() << " " << ab[i+1] << " " << ab[i-1] << " " << ab[i] << std::endl;
-            ab.erase(ab.begin() + i); ab.erase(ab.begin() + i - 1);
-            count = count + 2;
+        if ((ab.size() == 2) && (ab[0] == ab[1])) {return count + 2;} else if (ab.size() == 2) { return count;}
+        bool flag = true;
+        for (int i = 0; i < ab.size() - 1; i++) {
+            if (ab[i] == ab[i+1]) {
+                if (ab[i+2] == 100) {
+                } else if (ab[i+1] == ab[i+2]) {
+                    ab.erase(ab.begin() + i); ab.erase(ab.begin() + i); ab.erase(ab.begin() + i);
+                    count = count + 3;
+                    flag = false;
+                }
+                std::cout << "Condition met on line: " << __LINE__ << " " << __FILE__ << ab.size() << " " << ab[i+1] << " " << ab[i-1] << " " << ab[i] << std::endl;
+                ab.erase(ab.begin() + i); ab.erase(ab.begin() + i);
+                count = count + 2;
+                flag = false;
+                /* for (int g : ab) { std::cout << g << " ";} */
 
+            }
         }
-        if (ab[i] == ab[i+1]) {
-            std::cout << "Condition met on line: " << __LINE__ << " " << __FILE__ << ab.size() << " " << ab[i+1] << " " << ab[i-1] << " " << ab[i] << std::endl;
-            ab.erase(ab.begin() + i); ab.erase(ab.begin() + i + 1);
-            count = count + 2;
-
-        }
-    }
+        if (flag) { return count; }
     }
     return count;
 }
