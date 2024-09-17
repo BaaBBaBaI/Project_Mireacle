@@ -90,46 +90,29 @@ int kulak(const int a) {
 
 }
 
+std::pair<std::vector<int>, int> hui(std::pair<std::vector<int>, int> J) {
+    std::pair<std::vector<int>, int> backy;
+    for (int i = 1; i < J.first.size()-1; i++) {
+        if (J.first[i] == J.first[i-1] || J.first[i] == J.first[i+1]) {
+            J.second++;
+        } else { backy.first.push_back(J.first[i]); }
+    }
+    return backy;
+}
+
 int kfc(int a) {
-    int b, count = 0;
+    int b;
     std::vector<int> ab;
     for (int i = 0; i < a; i++) {
         std::cin >> b;
         ab.push_back(b);
     }
-    int absize = ab.size();
-    if (ab.size() < 2) { return 0; }
-    while (ab.size() >= 2 ) {
-        if ((ab.size() == 2) && (ab[0] == ab[1])) {return count + 2;} else if (ab.size() == 2) { return count;}
-        int flag = 0;
-        for (int i = 0; i < absize - 3; i++) {
-            if (ab[i] == ab[i+1]) { flag++;}
-                /* for (int g : ab) { std::cout << g << " ";} */
-            if (ab[i+1] == ab[i+2]) { flag = flag + 2;}
-            switch (flag)
-            {
-            case 1:
-                std::cout << "Condition met on line: " << __LINE__ << " " << __FILE__ << ab.size() << " " << ab[i+1] << " " << ab[i-1] << " " << ab[i] << std::endl;
-                ab.erase(ab.begin() + i); ab.erase(ab.begin() + i);
-                count = count + 2;
-                break;
-            case 2:
-                std::cout << "Condition met on line: " << __LINE__ << " " << __FILE__ << ab.size() << " " << ab[i+1] << " " << ab[i-1] << " " << ab[i] << std::endl;
-                ab.erase(ab.begin() + i + 1); ab.erase(ab.begin() + i + 1);
-                count = count + 2;
-                break;
-            case 3:
-                std::cout << "Condition met on line: " << __LINE__ << " " << __FILE__ << ab.size() << " " << ab[i+1] << " " << ab[i-1] << " " << ab[i] << std::endl;
-                ab.erase(ab.begin() + i); ab.erase(ab.begin() + i); ab.erase(ab.begin() + i);
-                count = count + 3;
-                break;
-            default:
-                break;
-            }
-        }
-        if (flag == 0) { return count; }
-    }
-    return count;
+    std::pair<std::vector<int>, int> bibi;
+    bibi.first = ab;
+    bibi.second = 0;
+    bibi = hui(bibi);
+
+
 }
 
 
