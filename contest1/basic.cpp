@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
+#include <utility>
 
 bool strnum(const std::string& str) {
     for (char c : str) {
@@ -82,7 +82,6 @@ int kulak(const int a) {
     if (ab[a-1] > ab[a-2]) {count++; /* std::cout << "Condition met on line: " << __LINE__ << " " << __FILE__ << ab[a-1] << " " << ab[a-2] << std::endl; */}
     for (int i = 1; i < a - 1; i++) {
         if (ab[i] > ab[i-1] && ab[i] > ab[i+1]) {
-            // std::cout << "Condition met on line: " << __LINE__ << " " << __FILE__ << ab[i+1] << " " << ab[i-1] << " " << ab[i] << std::endl;
             count++;
         }
     }
@@ -90,31 +89,74 @@ int kulak(const int a) {
 
 }
 
-std::pair<std::vector<int>, int> hui(std::pair<std::vector<int>, int> J) {
-    std::pair<std::vector<int>, int> backy;
-    for (int i = 1; i < J.first.size()-1; i++) {
-        if (J.first[i] == J.first[i-1] || J.first[i] == J.first[i+1]) {
-            J.second++;
-        } else { backy.first.push_back(J.first[i]); }
+std::vector<int> hui(std::vector<int> J) {
+    std::vector<int> backy;
+    for (int i = 0; i < J.size(); i++) {
+        if (i == 0) { if (J[i] == J[i+1]) { } else { backy.push_back(J[i]); } }
+        else if (i == J.size() - 1) { if (J[i] == J[i-1]) { } else { backy.push_back(J[i]); } }
+        else { if (J[i] == J[i-1] || J[i] == J[i+1]) { } else { backy.push_back(J[i]); } }
     }
     return backy;
 }
 
 int kfc(int a) {
     int b;
-    std::vector<int> ab;
+    std::vector<int> ab, jb, jb1;
     for (int i = 0; i < a; i++) {
         std::cin >> b;
         ab.push_back(b);
     }
-    std::pair<std::vector<int>, int> bibi;
-    bibi.first = ab;
-    bibi.second = 0;
-    bibi = hui(bibi);
+    jb1 = ab;
+    jb = hui(jb1);
+    while (jb != jb1)
+    {
+        jb1 = jb;
+        jb = hui(jb);
+    }
+    return ab.size() - jb.size();
+    
 
 
 }
 
+int rapu(int a) {
+    std::vector<std::vector<int>> J(a, std::vector<int>(a));
+    for (int i = 0; i < a; i++) {
+        for (int j = 0; j < a; j++) {
+            if (i + j < a - 1) {
+                J[i][j] = 0;
+            }
+            if (i + j == a - 1) {
+                J[i][j] = 1;
+            }
+            if (i + j > a - 1) {
+                J[i][j] = 2;
+            }
+        }
+    }
+    for (auto row : J ) {
+        for (int elem : row) {
+            std::cout << elem << " ";
+        }
+        std::cout << std::endl;
+    }
+    return 0;
+
+
+}
+
+bool strInStr(std::string a, std::string b) {
+    if ( b.length() > a.length() ) {
+        return false;
+    }
+    for (int i = 0; i <= a.length() - b.length(); i++) {
+
+        if(a.substr(i, b.length()) == b) {  return true; }
+    }
+    return false;
+
+
+}
 
 void T13d3() {
     float a, b, ans = 10;
@@ -152,9 +194,27 @@ void T3d1() {
 
 }
 
+void T3d2() {
+    int a;
+    std::cin >> a;
+    rapu(a);
+
+}
+
+void T4d1() {
+    std::string a, b;
+    std::cin >> a >> b;
+    if (strInStr(a, b)) {
+        std::cout << "yes" << std::endl;
+    } else {
+        std::cout << "no" << std::endl;
+    }
+
+}
+
 int main() {
 
-    T3d1();
+    T4d1();
 
     return 0;
     
