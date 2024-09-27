@@ -158,6 +158,18 @@ bool strInStr(std::string a, std::string b) {
 
 }
 
+std::string linePopit(const int& a, const int& b) {
+    std::string result;
+    result = result + std::to_string(b);
+    for (int i = 0; i <= a; i++) {
+        for (int j = 0; j < result.length(); j++) {
+            return "0";
+        }
+    }
+
+
+}
+
 void T13d3() {
     float a, b, ans = 10;
     int nd, st;
@@ -179,13 +191,6 @@ void T2d3() {
     std::cout  << kulak(a) << std::endl;
 }
 
-/* Группа студентов, состоящая из N человек решает, после какой пары они хотели бы пойти в КФС. Если студенты, желающие уйти с одной и той же пары, стоят рядом, то они уходят, а остальные продвигаются друг к другу.
-
-Например, 1 2 3 3 2 1 сначала превратится в последовательность 1 2 2 1, потом в 1 1, а потом не останется никого.
-
-Спрашивается: сколько студентов всего найдут себе компанию и дойдут до КФС?
-
-Например, для приведённой последовательности ответом будет число 6. */
 
 void T3d1() {
     int a;
@@ -209,6 +214,13 @@ void T4d1() {
     } else {
         std::cout << "no" << std::endl;
     }
+
+}
+
+void T4d2() {
+    int a, b;
+    std::string prikoliks;
+
 
 }
 
