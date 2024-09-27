@@ -1,6 +1,7 @@
 #include <vector>
 #include <iostream>
 #include <string>
+#include <cmath>
 
 std::pair<int, int> maxmin(const std::vector<int>& a, std::string b) {
     int maxi = a[0];
@@ -45,6 +46,69 @@ std::vector<std::string> reshi(int a) {
     return J;
 }
 
+std::pair<int, int> ferm(int number) {
+    if (number - 2 % 4 == 0) { return std::make_pair(1, number);}  
+    int koren=sqrt(number); int x=1; int q=0; int delit1,delit2; int koren_iz_q=0;
+    while(true){
+        q=(koren+x)*(koren+x)-number;
+        koren_iz_q=sqrt(q);
+        if (koren_iz_q*koren_iz_q==q){ break; } else{ x++; }
+    }
+    delit1=(koren+x)-koren_iz_q;
+    delit2=(koren+x)+koren_iz_q;
+    return std::make_pair(delit1, delit2);
+}
+
+
+std::vector<int> fermresh(int a) {
+    std::pair<int, int> k;
+    std::vector<int> Z, V;
+    Z.push_back(a);
+    bool flag = true;
+    while (flag == true) {
+        V.clear();
+        for (int i = 0; i < Z.size(); i++) { k = ferm(Z[i]); V.push_back(k.first); V.push_back(k.second);}
+        Z.clear();
+        for (int i = 0; i < V.size(); i++) { if (V[i] != 1) {Z.push_back(V[i]);}}
+        if (V.size() - Z.size() == Z.size()) { flag = false; }
+    }
+    return Z;
+
+}
+
+int poslm(int j) {
+    int curr = 4;
+
+    return curr;
+}
+
+bool mersenmersen(int a) {
+    int curr = 4;
+    int f = pow(2, a) - 1;
+    for (int k = 1; k != a - 1; k++) {
+        curr = pow(curr, 2) - 2;
+        curr = curr % f;
+    }
+    if (curr == 0) {
+        return true;
+    }
+    return false;
+
+}
+
+int noom(int a) {
+    a = pow(a, 2);
+    std::string z = std::to_string(a);
+    int start = (z.length()-5) / 2;
+    int end = start + 5;
+    std::string bb;
+    for (int i = start; i < end; i++) {
+        bb += z[i];
+    }
+    return std::stoi(bb);
+
+}
+
 int main1() {
     int f1, f2, f3, f4;
     std::cin >> f1 >> f2 >> f3 >> f4;
@@ -57,7 +121,7 @@ int main1() {
     return 0;
 }
 
-int main() {
+int main2() {
     std::vector<std::string> j;
     int a;
     std::cin >> a;
@@ -68,5 +132,51 @@ int main() {
     std::cout << std::endl;
 
 
+    return 0;
+}
+
+int main3() {
+    int a;
+    std::cin >> a;
+    std::vector<int> L;
+    L = fermresh(a);
+    for (int c : L) {
+        std::cout << c << " ";
+    }
+    std::cout << std::endl;
+
+
+    return 0;
+    
+}
+
+int main4() {
+    int a;
+    std::cin >> a;
+    if (mersenmersen(a) == true) {
+        std::cout << "Prime" << std::endl;
+    } else { std::cout << "Composite" << std::endl; }
+
+    return 0;
+
+}
+
+int main5() {
+    int a;
+    std::cin >> a;
+    for (int j = 0; j < 10; j++) {
+        a = noom(a);
+        std::cout << a << std::endl;
+    }
+    return 0;
+
+}
+
+int main() {
+    main1();
+    main2();
+    main3();
+    main4();
+    main5();
     return 0;
 }
