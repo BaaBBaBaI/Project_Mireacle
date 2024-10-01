@@ -83,6 +83,7 @@ int poslm(int j) {
 }
 
 bool mersenmersen(int a) {
+    if (a == 1) { return true;}
     int curr = 4;
     int f = pow(2, a) - 1;
     for (int k = 1; k != a - 1; k++) {
@@ -96,11 +97,11 @@ bool mersenmersen(int a) {
 
 }
 
-int noom(int a) {
+long long noom(long long a) {
     a = pow(a, 2);
     std::string z = std::to_string(a);
-    int start = (z.length()-5) / 2;
-    int end = start + 5;
+    long long start = (z.length()-5) / 2;
+    long long end = start + 5;
     std::string bb;
     for (int i = start; i < end; i++) {
         bb += z[i];
@@ -162,7 +163,7 @@ int main4() {
 }
 
 int main5() {
-    int a;
+    long long a;
     std::cin >> a;
     for (int j = 0; j < 10; j++) {
         a = noom(a);
@@ -173,10 +174,6 @@ int main5() {
 }
 
 int main() {
-    main1();
-    main2();
-    main3();
     main4();
-    main5();
     return 0;
 }

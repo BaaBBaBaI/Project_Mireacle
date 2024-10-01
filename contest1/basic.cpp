@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <utility>
+#include <fstream>
 
 bool strnum(const std::string& str) {
     for (char c : str) {
@@ -158,21 +159,66 @@ bool strInStr(std::string a, std::string b) {
 
 }
 
-std::string linePopit(const int& a, const int& b) {
-    std::string result;
-    result = result + std::to_string(b);
-    for (int i = 0; i <= a; i++) {
-        for (int j = 0; j < result.length(); j++) {
-            return "0";
+std::string popei(const std::string& a, const int& b) {
+    std::string interchangable = "";
+    std::string finish = a;
+    for (int i = 0; i < b; i++) {
+            char z = finish[0];
+            int count = 1;
+        for (int i = 1; i < finish.length(); i++) {
+            if (finish[i] == z ) {
+                count++;
+            }
+            else {
+                interchangable = interchangable + std::to_string(count) + z;
+                z = finish[i]; count = 1;
+            }
+        }
+        interchangable = interchangable + std::to_string(count) + z;
+        finish = interchangable; interchangable.clear();
+    }
+    return finish;
+
+}
+
+std::string aToBi(const std::string& a) {
+    std::string interchangable = "0123456789";
+    std::string finish, tempo = "", jkjk = "";
+    char num;
+    for (int i = 0; i < a.length(); i++) {
+        if (interchangable.find(a[i]) != std::string::npos ) {
+            tempo += a[i];
+        }
+        else {
+            if (tempo != "") {
+                int tt = std::stoi(tempo);
+                while (tt > 0) {
+                    jkjk += std::to_string(tt%2);
+                    tt = tt/2;
+                }
+                std::string revjkjk(jkjk.rbegin(), jkjk.rend());
+                finish += revjkjk;
+                tempo = ""; jkjk = "";
+                finish += a[i];
+            } else {
+                finish += a[i];
+            }
         }
     }
-
-
+    if (tempo != "") {
+        int tt = std::stoi(tempo);
+        while (tt > 0) {
+            jkjk += std::to_string(tt%2);
+            tt = tt/2;
+        }
+        std::string revjkjk(jkjk.rbegin(), jkjk.rend());
+        finish += revjkjk; }
+    return finish;
 }
 
 void T13d3() {
     float a, b, ans = 10;
-    int nd, st;
+    int nd, st; 
     std::string d;
     std::cin >> a >> d;
     if (!strnum(d)) { std::cin >> b; ans = simplecalc(a, b, d[0]);}
@@ -220,13 +266,22 @@ void T4d1() {
 void T4d2() {
     int a, b;
     std::string prikoliks;
-
+    std::cin >> prikoliks >> a;
+    std::cout << popei(prikoliks, a-1) << std::endl;
 
 }
 
+void T4d3() {
+    std::ifstream filein("input.txt");
+    std::ofstream fileout("output.txt");
+    std::string prikoliks;
+    filein >> prikoliks;
+    fileout << aToBi(prikoliks) << std::endl;
+
+}
 int main() {
 
-    T4d1();
+    T4d3();
 
     return 0;
     
