@@ -3,6 +3,7 @@
 #include <vector>
 #include <utility>
 #include <fstream>
+#include <iomanip>
 
 bool strnum(const std::string& str) {
     for (char c : str) {
@@ -216,6 +217,19 @@ std::string aToBi(const std::string& a) {
     return finish;
 }
 
+std::vector<float> noFriends(int a) {
+    std::string familia[a], imya[a];
+    float aa[a], ab[a], ac[a];
+    float ares = 0, bres = 0, cres = 0;
+    for (int i = 0 ; i < a; i ++) {
+        std::cin >> familia[i] >> imya[i] >> aa[i] >> ab[i] >> ac[i];
+    }
+    for (int i = 0 ; i < a; i++) {
+        ares += aa[i]; bres += ab[i]; cres += ac[i];
+    }
+    return {ares/a, bres/a ,cres/a};
+}
+
 void T13d3() {
     float a, b, ans = 10;
     int nd, st; 
@@ -277,11 +291,23 @@ void T4d3() {
     std::string prikoliks;
     filein >> prikoliks;
     fileout << aToBi(prikoliks) << std::endl;
-
 }
+
+void T5d9() {
+    int a;
+    std::cin >> a;
+    std::vector<float> b = noFriends(a);
+    for (float c : b) {
+        std::cout << std::fixed << std::setprecision(1) << c << " ";
+    }
+    std::cout << std::endl;
+    
+}
+
+
 int main() {
 
-    T4d3();
+    T5d9();
 
     return 0;
     
