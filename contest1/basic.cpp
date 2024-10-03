@@ -304,6 +304,14 @@ void T5d9() {
     
 }
 
+void T5d9two() {
+    int a;
+    std::cin >> a;
+    
+
+
+}
+
 
 int main() {
 
