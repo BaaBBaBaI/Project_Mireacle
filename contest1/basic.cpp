@@ -4,6 +4,27 @@
 #include <utility>
 #include <fstream>
 #include <iomanip>
+#include <map>
+
+
+std::pair<int, int> maxmin(const std::vector<int>& a, std::string b) {
+    int maxi = a[0];
+    int mini = a[0];
+    int index = 0;
+    if (b == "min") {
+        for (int i =0; i < a.size(); i++) {
+            if (a[i] < mini) { mini = a[i]; index = i; }
+        }
+        return std::make_pair(mini, index);
+    } if (b == "max") {
+        for (int i = 0; i < a.size(); i++) {
+            if (a[i] > maxi) { maxi = a[i]; index = i; }
+        }
+        return std::make_pair(maxi, index);
+    }
+    else { return std::make_pair(0, 0); }
+
+}
 
 bool strnum(const std::string& str) {
     for (char c : str) {
@@ -230,6 +251,20 @@ std::vector<float> noFriends(int a) {
     return {ares/a, bres/a ,cres/a};
 }
 
+void noFriendsAgain (int a) {
+    std::map<float,std::pair<std::string,std::string>> piz;
+    std::string s, b;
+    float aa, bb, cc;
+    for (int i = 0; i < a; i++) {
+        std::cin >> s >> b >> aa >> bb >> cc;
+        piz[(aa + bb + cc) / 3] = std::make_pair(s, b);
+    }
+    for (auto it = piz.rbegin(); it != piz.rend(); ++it) {
+        std::cout << it -> second.first << " " << it ->second.second << " ";
+    }
+    std::cout << std::endl;
+}
+
 void T13d3() {
     float a, b, ans = 10;
     int nd, st; 
@@ -305,17 +340,17 @@ void T5d9() {
 }
 
 void T5d9two() {
+
     int a;
     std::cin >> a;
-    
-
+    noFriendsAgain(a);
 
 }
 
 
 int main() {
 
-    T5d9();
+    T5d9two();
 
     return 0;
     
