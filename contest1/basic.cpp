@@ -5,7 +5,7 @@
 #include <fstream>
 #include <iomanip>
 #include <map>
-
+#include <algorithm>
 
 std::pair<int, int> maxmin(const std::vector<int>& a, std::string b) {
     int maxi = a[0];
@@ -252,18 +252,82 @@ std::vector<float> noFriends(int a) {
 }
 
 void noFriendsAgain (int a) {
-    std::map<float,std::pair<std::string,std::string>> piz;
+    std::map<std::pair<std::string,std::string>, float> pizo;
+    std::multimap<float,std::pair<std::string,std::string>> piz;
+
     std::string s, b;
     float aa, bb, cc;
     for (int i = 0; i < a; i++) {
         std::cin >> s >> b >> aa >> bb >> cc;
-        piz[(aa + bb + cc) / 3] = std::make_pair(s, b);
+        pizo[std::make_pair(s, b)] = (aa + bb + cc) / 3;
     }
+
+    for ( const auto& pair : pizo) { 
+        piz.insert({pair.second, pair.first});
+    }
+
     for (auto it = piz.rbegin(); it != piz.rend(); ++it) {
-        std::cout << it -> second.first << " " << it ->second.second << " ";
+        std::cout << it -> second.first << " " << it ->second.second << std::endl;
     }
     std::cout << std::endl;
 }
+
+int NeverEverBruh (const std::string& anal) {
+    std::string b, c, d;
+    b = {anal[0] , anal[1]};
+    c = {anal[3] , anal[4]};
+    d = {anal[6] , anal[7]};
+    return std::stoi(d) * 360 + std::stoi(c) * 30 + std::stoi(b);
+
+}
+
+/* void NeverEverFriendsEver (int a) {
+    std::multimap<std::string,std::multimap< std::string,std::string, DateComparator>> piz; std::multimap< std::string,std::string, DateComparator> pizo;
+    std::string clas, name, surn, date; std::string fullname; int x, y, z, sumdate; std::pair<std::string, std::string> opop;
+    for (int i = 0; i < a; i++) {
+        std::cin >> surn >> name >> clas >> date;
+        fullname = surn + " " + name; sumdate = NeverEverBruh(date);
+        opop.first = date; opop.second = fullname;
+        pizo.insert({date, fullname});
+        piz.insert({clas, pizo});
+        pizo.clear();       
+    }
+    for (const auto& pair : piz) {
+        for (const auto& pairt : pair.second) {
+            std::cout << pair.first << " " <<  pairt.first << " " << pairt.second << std::endl;
+        }
+    }
+
+
+} */
+
+
+void NeverEverFriendsEver(int a) {
+    std::map<std::string, std::vector<std::pair<std::string, std::string>>> piz;
+    std::string clas, name, surn, date;
+    std::string fullname;
+
+    for (int i = 0; i < a; i++) {
+        std::cin >> surn >> name >> clas >> date;
+        fullname = surn + " " + name;
+        piz[clas].push_back({date, fullname});
+    }
+
+    for (auto& [class_name, students] : piz) {
+        std::sort(students.begin(), students.end(), 
+            [](const auto& a, const auto& b) {
+                return a.first < b.first;
+            });
+    }
+
+    for (const auto& [class_name, students] : piz) {
+        for (const auto& [date, fullname] : students) {
+            std::cout << class_name << " " << fullname << " " << date << std::endl;
+        }
+    }
+}
+
+
 
 void T13d3() {
     float a, b, ans = 10;
@@ -347,10 +411,19 @@ void T5d9two() {
 
 }
 
+void T5d9three() {
+
+    int a;
+    std::cin >> a;
+    NeverEverFriendsEver(a);
+
+
+}
+
 
 int main() {
 
-    T5d9two();
+    T5d9three();
 
     return 0;
     
