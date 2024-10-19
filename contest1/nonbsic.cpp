@@ -22,6 +22,26 @@ void fillArrayRandomly(double* arr, int size) {
     delete[] temp;
 }
 
+int myPow( const int& a, const int& b) {
+    int res = 1;
+
+
+}
+
+/* include <cstdint>
+
+uint64_t fast_exponentiation(uint64_t base, uint64_t exponent) {
+    uint64_t result = 1;
+    while (exponent > 0) {
+        if (exponent % 2 == 1) {
+            result *= base;
+        }
+        exponent >>= 1;
+        base *= base;
+    }
+    return result;
+} */
+
 void T10d1() {
     double **p = NULL;
     int n;
@@ -44,6 +64,14 @@ void T10d2() {
     }
     std::cout << sum;
     delete[] a;
+
+}
+
+void T10d3() {
+    int a, b;
+
+    std::cin >> a >> b;
+    std::cout << myPow(a, b);
 
 }
 

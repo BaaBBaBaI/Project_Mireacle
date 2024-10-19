@@ -8,7 +8,6 @@ std::pair<float,float> pipi(float a, float b, float c) {
     float ans2 = (-b - ca) / (2 * a);
     return std::make_pair(ans1, ans2);
 }
-
 int main() {
     float a, b, c; char as;
     std::cin >> a >> b >> c;
