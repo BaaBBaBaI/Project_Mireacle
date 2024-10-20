@@ -81,10 +81,10 @@ std::vector<int> moreMoreMore (const std::string& a, const std::string& b) {
 
 std::vector<int> moreMoreMore (const std::string& a, const std::string& b) {
     std::pair<std::vector<int>, std::vector<int>> woo;
+    woo = toVecPlus(a, b, 's');
     int over1, over2 = 0; std::vector<int> out;
     std::reverse(woo.first.begin(), woo.first.end());
     std::reverse(woo.second.begin(), woo.second.end());
-    woo = toVecPlus(a, b, 's');
     for (int i = 0; i < woo.first.size() + woo.second.size(); i++) {
         out.push_back(0); 
     }
@@ -92,7 +92,10 @@ std::vector<int> moreMoreMore (const std::string& a, const std::string& b) {
         for (int i = 0; i < woo.second.size(); i++) {
             for (int j = 0; j < woo.first.size(); j++) {
                 over1 = woo.first[j] * woo.second[i] + over2;
-                out[i] += over1 % 10; over2 = over1 / 10;  
+                out[i+j] += over1 % 10; over2 = over1 / 10;  
+            }
+            if (over2 != 0) {
+                out[i+woo.first.size()] += over2; over2 = 0;
             }
         }
     }
@@ -101,10 +104,20 @@ std::vector<int> moreMoreMore (const std::string& a, const std::string& b) {
         for (int i = 0; i < woo.second.size(); i++) {
             for (int j = 0; j < woo.first.size(); j++) {
                 over1 = woo.first[j] * woo.second[i] + over2;
-                out[i] += over1 % 10; over2 = over1 / 10;  
+                out[i+j] += over1 % 10; over2 = over1 / 10;  
+            }
+            if (over2 != 0) {
+                out[i+woo.first.size()] += over2; over2 = 0;
             }
         }
     }
+    for (int zz = 0 ; zz < out.size(); zz++) {
+        if (out[zz] > 9) {
+            out[zz+1] += out[zz] / 10;
+            out[zz] = out[zz] % 10;
+        }
+    }
+    if (out[out.size()-1] == 0) { out.pop_back(); }
     std::reverse(out.begin(), out.end());
     return out;
 }
