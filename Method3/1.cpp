@@ -41,11 +41,10 @@ std::pair<std::vector<int>, std::vector<int>> toVecPlus(std::string aint, std::s
         std::cout << YELLOW << "Warning: wrong char provided. Use 's' for standart vectorization of 2 strings, 'a' for advanced.\n "  << RESET;
         break;
     }
-    
-
+    return std::pair<std::vector<int>, std::vector<int>> {-1, -1};
 }
 
-
+/* 
 std::vector<int> moreMoreMore (const std::string& a, const std::string& b) {
     bool giga;
     std::pair<std::vector<int>, std::vector<int>> woo; int over1, over2 = 0; std::vector<int> out;
@@ -56,7 +55,7 @@ std::vector<int> moreMoreMore (const std::string& a, const std::string& b) {
     if (woo.first.size() >= woo.second.size()) {
         J[woo.second.size()];
         for (int i = 0; i < woo.second.size(); i++) {
-            for (int zz = 0; zz < i; zz++) { J[i].push_back(0); }
+            // for (int zz = 0; zz < i; zz++) { J[i] = 0; }
             for (int j = 0; j < woo.first.size(); j++) {
                 over1 = woo.first[j] * woo.second[i] + over2;
                 J[i].push_back(over1 % 10); over2 = over1 / 10;
@@ -78,11 +77,42 @@ std::vector<int> moreMoreMore (const std::string& a, const std::string& b) {
     
     
     
+} */
+
+std::vector<int> moreMoreMore (const std::string& a, const std::string& b) {
+    std::pair<std::vector<int>, std::vector<int>> woo;
+    int over1, over2 = 0; std::vector<int> out;
+    std::reverse(woo.first.begin(), woo.first.end());
+    std::reverse(woo.second.begin(), woo.second.end());
+    woo = toVecPlus(a, b, 's');
+    for (int i = 0; i < woo.first.size() + woo.second.size(); i++) {
+        out.push_back(0); 
+    }
+    if (woo.first.size() >= woo.second.size()) {
+        for (int i = 0; i < woo.second.size(); i++) {
+            for (int j = 0; j < woo.first.size(); j++) {
+                over1 = woo.first[j] * woo.second[i] + over2;
+                out[i] += over1 % 10; over2 = over1 / 10;  
+            }
+        }
+    }
+    else {
+        swapPair(woo);
+        for (int i = 0; i < woo.second.size(); i++) {
+            for (int j = 0; j < woo.first.size(); j++) {
+                over1 = woo.first[j] * woo.second[i] + over2;
+                out[i] += over1 % 10; over2 = over1 / 10;  
+            }
+        }
+    }
+    std::reverse(out.begin(), out.end());
+    return out;
 }
+
 
 int breather (const std::string& a, const std::string& b, char z) {
     bool giga;
-    if (z == '*') { std::vector<int> outr = moreMoreMore(a, b);for(int c : outr) { std::cout << c;};std::cout << std::endl; }
+    if (z == '*') { std::vector<int> outr = moreMoreMore(a, b); for(int c : outr) { std::cout << c;};std::cout << std::endl; return 1;}
     if (a.length() > b.length()) {giga = true;} else { giga = false;}
     std::pair<std::vector<int>, std::vector<int>> wo; std::vector<int> outer;
     wo = toVecPlus(a, b, 'a'); int over = 0;
@@ -115,8 +145,7 @@ int breather (const std::string& a, const std::string& b, char z) {
         }
     }
     std::reverse(outer.begin(), outer.end());
-    system("clear");
-    for (int c : outer) { std::cout << c;}
+    for (int c : outer){ std::cout << c;}
     std::cout << std::endl;
     return(toInt(outer));
 
@@ -131,3 +160,4 @@ int main() {
 
     return 0;
 }
+
