@@ -27,7 +27,7 @@ std::vector<int> moreMoreMore (const std::string& a, const std::string& b) {
         }
     }
     else {
-        swapPair(woo);
+        woo = swapPair(woo);
         for (int i = 0; i < woo.second.size(); i++) {
             for (int j = 0; j < woo.first.size(); j++) {
                 over1 = woo.first[j] * woo.second[i] + over2;

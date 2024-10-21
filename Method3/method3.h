@@ -8,6 +8,9 @@
 #define METHOD3_H
 
 #include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
 
 std::vector<int> toVector(std::string a) {
     std::vector<int> retVal;
@@ -50,10 +53,9 @@ std::pair<std::vector<int>, std::vector<int>> toVecPlus(std::string aint, std::s
 }
 
 template<typename T1, typename T2>
-void swapPair(std::pair<T1, T2>& p) {
-    T1 temp = p.first;  
-    p.first = p.second;  
-    p.second = temp;  
+std::pair<T2, T1> swapPair(std::pair<T1, T2>& p) {
+    std::pair<T2, T1> smallPox(p.second, p.first);
+    return smallPox;
 }
 
 #endif
