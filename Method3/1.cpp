@@ -11,7 +11,7 @@ std::vector<int> moreMoreMore (const std::string& a, const std::string& b) {
     woo = toVecPlus(a, b, 's');
     int over1, over2 = 0; std::vector<int> out;
     std::reverse(woo.first.begin(), woo.first.end());
-    std::reverse(woo.second.begin(), woo.second.end());
+    std::reverse(woo.second.begin(), woo.second.end());     
     for (int i = 0; i < woo.first.size() + woo.second.size(); i++) {
         out.push_back(0); 
     }
@@ -49,10 +49,30 @@ std::vector<int> moreMoreMore (const std::string& a, const std::string& b) {
     return out;
 }
 
+int DeliDavay (std::string a, std::string b, int& rem) {
+    int div, iso; div = toInt(toVector(a)); iso = toInt(toVector(b));
+    if (div == 0 || iso == 0) { return -1; }
+    div = abs(div); iso = abs(iso);
+    int lt, rt, quo;
+    lt = 0; rt = div; quo = 0;
+    while (lt <= rt) {
+        int medi = (rt + lt) / 2;
+        switch (medi * iso <= div)
+        {
+        case true: { quo = medi; lt = medi + 1; continue; }
+        case false: { rt = medi - 1; continue; }
+        default: continue;
+        }
+    }
+
+    rem = div - (quo * iso);
+    return quo;
+}
 
 int breather (const std::string& a, const std::string& b, char z) {
     bool giga;
-    if (z == '*') { std::vector<int> outr = moreMoreMore(a, b); for(int c : outr) { std::cout << c;};std::cout << std::endl; return 1;}
+    if (z == '/') { int rema; int outr = DeliDavay(a, b, rema); std::cout << "Результат: " << outr << "\nОст: " << rema << std::endl; return 1; }
+    if (z == '*') { int outr = toInt(moreMoreMore(a, b)); std::cout << outr << std::endl; return 1;}
     if (a.length() > b.length()) {giga = true;} else { giga = false;}
     std::pair<std::vector<int>, std::vector<int>> wo; std::vector<int> outer;
     wo = toVecPlus(a, b, 'a'); int over = 0;
@@ -94,7 +114,7 @@ int breather (const std::string& a, const std::string& b, char z) {
 int main() {
     std::string a, b; char z;
     std::cin >> a >> z >> b;
-    std::cout << a << " " << b << "\n";
+    // std::cout << a << " " << b << "\n";
     breather(a, b, z);
 
     return 0;
