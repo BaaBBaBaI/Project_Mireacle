@@ -28,6 +28,14 @@ int myPow( const int& a, const int& b) {
 
 }
 
+long fastPow (float a, unsigned int b) {
+
+    
+
+
+}
+
+
 /* include <cstdint>
 
 uint64_t fast_exponentiation(uint64_t base, uint64_t exponent) {
@@ -73,6 +81,13 @@ void T10d3() {
     std::cin >> a >> b;
     std::cout << myPow(a, b);
 
+}
+
+void T11d1() {
+    float a; unsigned int b;
+
+    std::cin >> a >> b;
+    std::cout << fastPow(a, b);
 }
 
 int main() {

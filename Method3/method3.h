@@ -12,7 +12,7 @@
 #include <vector>
 #include <algorithm>
 #include <cmath>
-
+#include <thread>
 
 std::vector<int> toVector(std::string a) {
     std::vector<int> retVal;

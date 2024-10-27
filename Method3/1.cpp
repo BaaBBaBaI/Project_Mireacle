@@ -1,9 +1,3 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cmath>
-#include <thread>
-#include <cassert>
 #include "method3.h"
 
 std::vector<int> moreMoreMore (const std::string& a, const std::string& b) {
@@ -70,6 +64,12 @@ int DeliDavay (std::string a, std::string b, int& rem) {
     return quo;
 }
 
+/* std::vector<int> breatherbin(const std::string& a,const std::string& b) {
+    std::pair<std::vector<int>, std::vector<int>> wo; wo = toVecPlus(a, b, 'a');
+    int over = 0; std::vector<int> outer;
+    
+} */
+
 int breather (const std::string& a, const std::string& b, char z) {
     bool giga;
     if (z == '/') { int rema; int outr = DeliDavay(a, b, rema); std::cout << YELLOW << "Result: " << outr << "\nRemains: " << rema << std::endl; return 1; }
@@ -80,11 +80,11 @@ int breather (const std::string& a, const std::string& b, char z) {
     for (int c : wo.first) { std::cout << c << " ";} for (int c : wo.second) { std::cout << c << " ";}
     std::cout << std::endl;
     if (z == '+') {
-    for (int i = wo.first.size()-1; i >= 0; i--) {
-        outer.push_back((wo.first[i] + wo.second[i] + over) % 10 );
-        over = (wo.first[i] + wo.second[i] + over) / 10;
-    }
-    if (over != 0) { outer.push_back(over); }
+        for (int i = wo.first.size()-1; i >= 0; i--) {
+            outer.push_back((wo.first[i] + wo.second[i] + over) % 10 );
+            over = (wo.first[i] + wo.second[i] + over) / 10;
+        }
+        if (over != 0) { outer.push_back(over); }
     }
     if (z == '-') {
         int tempc;
@@ -112,7 +112,9 @@ int breather (const std::string& a, const std::string& b, char z) {
 
 }
 
+
 int main() {
+    std::cout << "a + b for summ,\na * b for multiply,\na / b for division,\na @ b for bin summ/";
     std::string a, b; char z;
     std::cin >> a >> z >> b;
     // std::cout << a << " " << b << "\n";
