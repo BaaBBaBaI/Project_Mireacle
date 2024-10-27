@@ -54,6 +54,10 @@
         "ratio": "cpp",
         "stop_token": "cpp",
         "thread": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "unordered_map": "cpp",
+        "functional": "cpp",
+        "list": "cpp",
+        "xhash": "cpp"
     }
 }

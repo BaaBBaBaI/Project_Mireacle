@@ -4,44 +4,39 @@
 #include <string>
 #include <unordered_map>
 #include <functional>
-
-struct Datavector
-{
-    std::vector<int> Ya;
-};
+#include "BaBDataStack.h"
 
 
-bool pushCommand(std::vector<int>& call, int tt) {
+bool pushCommand(BBStack& call, int tt) {
     std::cout << "ok" << std::endl;
-    call.push_back(tt);
+    call.push(tt);
     return true;
 }
-bool sizeCommand(std::vector<int>& call, int tt) {
+bool sizeCommand(BBStack& call, int tt) {
     std::cout << call.size() << std::endl;
     return true;
 }
-bool backCommand(std::vector<int>& call, int tt) {
+bool backCommand(BBStack& call, int tt) {
     std::cout << call.back() << std::endl;
     return true;
 }
-bool popCommand(std::vector<int>& call, int tt) {
+bool popCommand( BBStack& call, int tt) {
     std::cout << call.back() << std::endl;
-    call.pop_back();
+    call.pop();
     return true;
 }
-bool clearCommand(std::vector<int>& call, int tt) {
+bool clearCommand(BBStack& call, int tt) {
     std::cout << "ok" << std::endl;
     call.clear();
     return true;
 }
-bool exitCommand(std::vector<int>& call, int tt) {
+bool exitCommand(BBStack& call, int tt) {
     std::cout << "bye" << std::endl;
     return false;
 }
 
 void stackr() {
-    Datavector Datavector;
-    std::unordered_map<std::string, std::function<bool(std::vector<int>&, int)>> commandMap = {
+    std::unordered_map<std::string, std::function<bool(BBStack&,  int)>> commandMap = {
         {"push", pushCommand},
         {"size", sizeCommand},
         {"back", backCommand},
@@ -50,15 +45,16 @@ void stackr() {
         {"exit", exitCommand}
 
     };
+    BBStack steck;
     std::string temp; int tWork = 1;
-    std::unordered_map<std::string, std::function<bool (std::vector<int>&, int)>>::iterator it;
+    std::unordered_map<std::string, std::function<bool (BBStack&,  int)>>::iterator it;
     bool fili = true;
     while (fili == true) {
         std::cin >> temp;
         if (temp == "push") { std::cin >> tWork; }
         it = commandMap.find(temp);
         if (it != commandMap.end()) {
-            fili = it->second(Datavector.Ya, tWork);
+            fili = it->second(steck, tWork);
         } else {
             std::cout << "Command not recognized!" << std::endl;
         }
