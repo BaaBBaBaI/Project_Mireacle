@@ -57,10 +57,11 @@ int DeliDavay (std::string a, std::string b, int& rem) {
     lt = 0; rt = div; quo = 0;
     while (lt <= rt) {
         int medi = (rt + lt) / 2;
-        switch (medi * iso <= div)
+        int hui = medi * iso <= div;
+        switch (hui)
         {
-        case true: { quo = medi; lt = medi + 1; continue; }
-        case false: { rt = medi - 1; continue; }
+        case 1: { quo = medi; lt = medi + 1; continue; }
+        case 0: { rt = medi - 1; continue; }
         default: continue;
         }
     }
@@ -71,7 +72,7 @@ int DeliDavay (std::string a, std::string b, int& rem) {
 
 int breather (const std::string& a, const std::string& b, char z) {
     bool giga;
-    if (z == '/') { int rema; int outr = DeliDavay(a, b, rema); std::cout << "Результат: " << outr << "\nОст: " << rema << std::endl; return 1; }
+    if (z == '/') { int rema; int outr = DeliDavay(a, b, rema); std::cout << YELLOW << "Result: " << outr << "\nRemains: " << rema << std::endl; return 1; }
     if (z == '*') { int outr = toInt(moreMoreMore(a, b)); std::cout << outr << std::endl; return 1;}
     if (a.length() > b.length()) {giga = true;} else { giga = false;}
     std::pair<std::vector<int>, std::vector<int>> wo; std::vector<int> outer;
