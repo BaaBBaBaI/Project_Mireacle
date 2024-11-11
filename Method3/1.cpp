@@ -114,7 +114,7 @@ int breather (const std::string& a, const std::string& b, char z) {
 
 
 int main() {
-    std::cout << "a + b for summ,\na * b for multiply,\na / b for division,\na @ b for bin summ/";
+    std::cout << "a + b for summ,\na * b for multiply,\na / b for division,\na @ b for bin summ (Not working) \n";
     std::string a, b; char z;
     std::cin >> a >> z >> b;
     // std::cout << a << " " << b << "\n";

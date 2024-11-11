@@ -69,5 +69,3 @@ int main() {
     return 0;
 }
 
-
-// https://site.ada.edu.az/~medv/acm/Docs%20e-olimp/Volume%2062/6122.htm temp delete soon.
