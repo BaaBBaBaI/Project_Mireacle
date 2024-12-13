@@ -49,6 +49,7 @@ int main() {
 
     std::cout << "Non chord method answer: " << opa.first << " " << opa.second << std::endl;
     std::cout << "Chord method answer: " << chan.first << " " << chan.second << std::endl;
-
+    
     return 0;
 }
+

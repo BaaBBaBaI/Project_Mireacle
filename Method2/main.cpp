@@ -22,6 +22,7 @@ std::pair<int, int> maxmin(const std::vector<int>& a, std::string b) {
 
 }
 
+
 std::vector<int> reshala(std::vector<int> a) {
     while (a[0] != a[1] || a[1] != a[2] || a[2] != a[3]) {
         std::pair<int, int> info1, info2;
