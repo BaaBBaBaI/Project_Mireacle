@@ -59,36 +59,44 @@ void fillRandomWithPrikol(Node& hun, int length) { /* Creates random nubers betw
     prikol->next = nullptr;
 }
 
-void nodeAppend(Node** curr, int workint) {
+void nodeAppend(Node &mass, int workint) {
+    Node tempo = mass;
     Node* newNode = new Node();
     newNode->data = workint;
+    Node* last = &mass;
 
-    if (*curr == nullptr) {
-        *curr = newNode;
+    if (last == nullptr) {
+        last = newNode;
         return;
     }
 
-    Node* temp = *curr;
-    while (temp->next != nullptr) {
+    Node* temp = last;
+    Node* first = last;
+    while (temp->next != first && temp->next != nullptr) {
         temp = temp->next;
+    }
+    
+    if (temp->next == first) {
+        newNode->next = first;
     }
 
     temp->next = newNode;
     newNode->prev = temp;
 }
 
+
 void fillRandomWithPrikol(Node& hun, int length, bool ifloop) { /* Creates random nubers between 0 and 100 or an infinite loop */
     srand(time(0));
     Node* prikol = &hun;
     Node* loopprikol;
-    prikol->data = 10;
+    prikol->data = rand() % 100;
     loopprikol = prikol;
     for (int i = 0; i < length; ++i) {
         prikol->next = new Node();
         prikol->next->data = rand() % 100;
         prikol = prikol->next;
     }
-    ifloop ? prikol->next = loopprikol->next : prikol->next = nullptr;
+    ifloop ? prikol->next = loopprikol : prikol->next = nullptr;
 }
 
 bool warnIfLooping (Node &worknode)  { /* this function tests, if any of nodes loop into eachother. it returns TRUE if it does loop */
@@ -133,7 +141,7 @@ void workNode(Node &obj, std::string oper, int workint) { /* This will work with
 
     Node* curr = &obj;
     if (oper == "show") { printNode(obj); }
-    else if (oper == "add") { nodeAppend(&curr, workint); }
+    else if (oper == "add") { nodeAppend(obj, workint); }
 
 
     
@@ -143,9 +151,10 @@ void task3() {
 
     Node initial;
     initial.data = 10;
-    fillRandomWithPrikol(initial, 5);
+    fillRandomWithPrikol(initial, 5, true);
     warnIfLooping(initial) ? std::cout << "Loop found!!\n" : std::cout << "No loop found!!\n";
     workNode(initial, "show", 1);
+    std::cout << "SENOM VEX\n";
     workNode(initial, "add", 10);
     printNode(initial);
 
@@ -189,7 +198,7 @@ void task2() {
 
 int main() {
 
-    task2();
+    task3();
 
 
     return 0;
