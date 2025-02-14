@@ -28,6 +28,40 @@ void printNode(Node work) { /* Prints da note! */
 
 }
 
+void printNode(Node work, std::string o) { /* Prints da note! But also in reverse*/
+    if (o == "reversed" || o == "r" || o == "reverse") {
+        Node* printed = &work;
+        Node* noloop = printed;
+        if (printed->prev == nullptr) {
+        std::cout << std::endl << "\tNode: [ nothing ]\n\n";
+        std::cout << std::endl << "\tNode: [";
+        do {
+        std::cout << " " << printed->data << " ";
+        printed = printed->prev;
+        } while (printed != nullptr && printed->prev != noloop->prev);
+        std::cout << "]" << std::endl;
+
+        return;
+    }
+
+    }
+    Node* printed = &work;
+    Node* noloop = printed;
+
+    if (printed->next == nullptr) {
+        std::cout << std::endl << "\tNode: [ nothing ]\n\n";
+        return;
+    }
+
+    std::cout << std::endl << "\tNode: [";
+    do {
+        std::cout << " " << printed->data << " ";
+        printed = printed->next;
+    } while (printed != nullptr && printed->next != noloop->next);
+    std::cout << "]" << std::endl;
+
+}
+
 void printNode(Node* work) { /* Prints da note! Unefficient But you know it works and I'm I'm not gonna change every single line of code*/
 
     Node* printed = work;
@@ -85,6 +119,37 @@ void nodeAppend(Node &mass, int workint) {
 }
 
 
+void nodeInsert(Node &mass, int workwith, int workint) {
+    Node* curr = &mass;
+    while (curr->next != nullptr && curr->next->data != workwith) {
+        curr = curr->next;
+    } if (curr->next->data == workwith) {
+        Node* newNode = new Node();
+        newNode->data = workint;
+        newNode->next = curr->next;
+        newNode->prev = curr;
+        curr->next->prev = newNode;
+        curr->next = newNode;
+        return;
+    }
+    return;
+
+}
+
+void nodeDel(Node &mass, int workwith) {
+    Node* curr = &mass;
+    while (curr->next != nullptr && curr->data != workwith) {
+        curr = curr->next;
+    } if (curr->data == workwith) {
+        curr->next->prev = curr->prev;
+        curr->prev->next = curr->next;
+        delete curr;
+        return;
+    }
+    return;
+
+}
+
 void fillRandomWithPrikol(Node& hun, int length, bool ifloop) { /* Creates random nubers between 0 and 100 or an infinite loop */
     srand(time(0));
     Node* prikol = &hun;
@@ -138,24 +203,24 @@ std::pair<Node*,Node*> splitBS (Node head, int number) { /* splits the list into
 }
 
 void workNode(Node &obj, std::string oper, int workint) { /* This will work with our node */
-
     Node* curr = &obj;
     if (oper == "show") { printNode(obj); }
     else if (oper == "add") { nodeAppend(obj, workint); }
-
-
-    
 }
 
 void task3() {
 
     Node initial;
-    initial.data = 10;
     fillRandomWithPrikol(initial, 5, true);
     warnIfLooping(initial) ? std::cout << "Loop found!!\n" : std::cout << "No loop found!!\n";
     workNode(initial, "show", 1);
     std::cout << "SENOM VEX\n";
     workNode(initial, "add", 10);
+    nodeInsert(initial, 10, 5);
+    printNode(initial);
+    nodeDel(initial, 5);
+
+
     printNode(initial);
 
 }
