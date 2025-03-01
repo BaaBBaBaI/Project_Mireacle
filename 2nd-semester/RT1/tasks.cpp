@@ -1,5 +1,6 @@
 
 #include "node.hpp"
+#include "tree.hpp"
 
 
 void task1() {
@@ -20,15 +21,15 @@ void task1() {
 void task2() {
 
     Node initial;
-    fillRandomWithPrikol(initial, 10);
-    warnIfLooping(initial) ? std::cout << "Loop found!!\n" : std::cout << "No loop found!!\n";
+    fillRandomWithPrikol(initial, 10); // random filling
+    warnIfLooping(initial) ? std::cout << "Loop found!!\n" : std::cout << "No loop found!!\n"; // loop check
     std::cout << std::endl << "Unsorted:\n";
     printNode(initial);
     std::pair<Node ,Node> wow;
     int seppoint;
     std::cout << std::endl << "Separation point: ";
     std::cin >> seppoint;
-    wow = splitBS(initial, seppoint);
+    wow = splitBS(initial, seppoint); // split the Node
     std::cout << std::endl << "Sorted via separation point:\n";
     printNode(wow.first);
     printNode(wow.second);
@@ -37,8 +38,8 @@ void task2() {
 }
 void task3() { //also includes functions from task4
 
-    Node initial;
-    fillRandomWithPrikol(initial, 4, true);
+    Node initial; // initialization of node
+    fillRandomWithPrikol(initial, 4, true); //4 nodes, loop
     warnIfLooping(initial) ? std::cout << "Loop found!!\n" : std::cout << "No loop found!!\n"; // check if there is a loop
     printNode(initial);// prints the linkedlist
     std::cout << "\n\tSize of Node: { " << sizeNode(initial) << " }" << std::endl; // returns size of said Node
@@ -51,6 +52,44 @@ void task3() { //also includes functions from task4
 }
 
 void task5() {}
+
+void task6() {
+    tree* root = NULL; int fin;
+    root = createFillTree(10); // Random filling (10 elements)
+    std::cout << root << std::endl; // cout function for tree prints with levels of the tree
+    std::cout << depth(root) << std::endl; // prints the depth of the tree
+    std::cin >> fin; std::cout << std::endl; // input for the next task
+    tree* newroot = find(root, fin); // finds a specific node in the tree
+    std::cout << newroot; // cout function for tree
+}
+
+void task7() {
+    book * root = NULL;
+    root = insert(root, {"John", {"123", "456"}}); // insert a bunch of books new book
+    root = insert(root, {"Alice", {"789", "012"}}); 
+    root = insert(root, {"Bob", {"345", "678"}});
+    root = insert(root, {"Charlie", {"901", "234"}});
+    root = insert(root, {"David", {"567", "890"}});
+    root = insert(root, {"Eve", {"321", "456"}});
+    root = insert(root, {"John", {"345", "567"}});
+    root = del(root, {"Charlie", {"234"}}); // delete function (charlies number)
+    root = del(root, {"Bob",{}}); // delete function (Bob)
+    book* findd = find(root, "Charlie"); // find function (charlie)
+    std::cout << root << std::endl; // preorder
+    std::cout << findd << std::endl;
+
+    
+}
+
+void task8() {
+    treesec* root = NULL;
+    int min, max;
+    std::cout << "\n\n\tinput numbers: ";
+    std::cin >> min >> max;
+    root = setTreeSec(root, min, max); // create an section tree
+    std::cout << xcount(root, 3) << "\n"; // counts x within
+    std::cout << root; // output (obhod dereva)
+}
 
 void task0() { //emty func
 
@@ -69,6 +108,9 @@ int main() {
     case 2: {task2(); break;}
     case 3: {task3(); break;}
     case 4: {task3(); break;}
+    case 6: {task6(); break;}
+    case 7: {task7(); break;}
+    case 8: {task8(); break;}
     default:
         break;
     }

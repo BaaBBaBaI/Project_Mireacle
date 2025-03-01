@@ -67,6 +67,21 @@
         "mutex": "cpp",
         "sstream": "cpp",
         "xlocbuf": "cpp",
-        "xlocmes": "cpp"
+        "xlocmes": "cpp",
+        "array": "cpp",
+        "*.tcc": "cpp",
+        "cstdarg": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "memory_resource": "cpp",
+        "numeric": "cpp",
+        "random": "cpp",
+        "string_view": "cpp",
+        "numbers": "cpp",
+        "semaphore": "cpp",
+        "span": "cpp",
+        "text_encoding": "cpp",
+        "cinttypes": "cpp",
+        "variant": "cpp"
     }
 }
