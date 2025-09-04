@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3rd-semester", "3rd-semester", "{0896921E-FC91-E0BA-B6E6-4D69589F358E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "C#", "C#", "{33C6E36F-4167-DF08-28D2-ED4CFA11DAAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app", "3rd-semester\C#\test\app.csproj", "{A6FE9D38-74EB-BFA9-1DBB-ADCE6D43277D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6FE9D38-74EB-BFA9-1DBB-ADCE6D43277D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6FE9D38-74EB-BFA9-1DBB-ADCE6D43277D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6FE9D38-74EB-BFA9-1DBB-ADCE6D43277D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6FE9D38-74EB-BFA9-1DBB-ADCE6D43277D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33C6E36F-4167-DF08-28D2-ED4CFA11DAAB} = {0896921E-FC91-E0BA-B6E6-4D69589F358E}
+		{A6FE9D38-74EB-BFA9-1DBB-ADCE6D43277D} = {33C6E36F-4167-DF08-28D2-ED4CFA11DAAB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08617A16-E571-4EE3-8DE0-29218882D9A8}
+	EndGlobalSection
+EndGlobal

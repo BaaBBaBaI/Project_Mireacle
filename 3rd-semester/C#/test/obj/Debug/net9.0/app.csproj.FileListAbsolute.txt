@@ -1,0 +1,15 @@
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/bin/Debug/net9.0/app
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/bin/Debug/net9.0/app.deps.json
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/bin/Debug/net9.0/app.runtimeconfig.json
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/bin/Debug/net9.0/app.dll
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/bin/Debug/net9.0/app.pdb
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/obj/Debug/net9.0/app.GeneratedMSBuildEditorConfig.editorconfig
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/obj/Debug/net9.0/app.AssemblyInfoInputs.cache
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/obj/Debug/net9.0/app.AssemblyInfo.cs
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/obj/Debug/net9.0/app.csproj.CoreCompileInputs.cache
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/obj/Debug/net9.0/app.sourcelink.json
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/obj/Debug/net9.0/app.dll
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/obj/Debug/net9.0/refint/app.dll
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/obj/Debug/net9.0/app.pdb
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/obj/Debug/net9.0/app.genruntimeconfig.cache
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/obj/Debug/net9.0/ref/app.dll
