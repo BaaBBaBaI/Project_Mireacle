@@ -16,7 +16,7 @@ void takeFrom(std::ifstream& file, std::string& textholder) {
 
 }
 
-std::string formEdit(std::ofstream& outputFile, std::string& textholder) {
+std::string formEdit(std::string& textholder) {
 
     std::string holded;
 
@@ -27,14 +27,41 @@ std::string formEdit(std::ofstream& outputFile, std::string& textholder) {
             } else { holded += textholder[i]; }
         }
     }
-    outputFile << holded << std::endl;
     return holded;
 
 }
 
-void pushTo(std::string& textholder);
+void pushTo(std::ofstream& outputFile, std::string& textholder) {
 
-void calcStr(std::string& textholder, char action);
+    outputFile << textholder << std::endl; return;
+
+}
+
+int calcStr(std::string& textholder, char action) {
+
+
+    
+}
+
+
+
+/*
+Для однобуквенных сочетаний (монограмм):
+Используйте std::map<char, int>.
+Читайте файл посимвольно.
+Для каждого прочитанного символа c увеличивайте значение счетчика в мапе: frequencies[c]++;.
+Если символа еще нет в мапе, он будет автоматически добавлен со значением 1.
+ */
+
+/*     
+Для двухбуквенных сочетаний (биграмм):
+Используйте std::map<std::string, int>.
+Для формирования биграмм понадобится "скользящее окно" из двух символов. Читайте из файла первый символ prev_char.
+Затем в цикле читайте следующий символ current_char.
+Создайте строку (биграмму) из этих двух символов: std::string bigram; bigram += prev_char; bigram += current_char;.
+Увеличьте счетчик для этой биграммы: bigram_frequencies[bigram]++;.
+"Сдвиньте" окно: prev_char = current_char; и перейдите к следующей итерации.
+ */
 
 void postprocess(std::string& textholder, char action);
 
@@ -46,7 +73,9 @@ int main() {
 
     takeFrom(file, textholder);
 
-    std::string editedtextholder = formEdit(outputFile, textholder);
+    std::string editedtextholder = formEdit(textholder);
+    pushTo(outputFile, editedtextholder);
+
 
     return 0;
 
