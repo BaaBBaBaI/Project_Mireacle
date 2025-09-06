@@ -2,6 +2,8 @@
 #include <fstream>
 #include <string>
 #include <cctype>
+#include <map>
+#include <cmath>
 
 void takeFrom(std::ifstream& file, std::string& textholder) {
 
@@ -37,33 +39,60 @@ void pushTo(std::ofstream& outputFile, std::string& textholder) {
 
 }
 
-int calcStr(std::string& textholder, char action) {
+std::map<std::string, int> calcStr(std::string& textholder, char action) {
 
+    std::map<std::string, int> frequencies;
+    std::map<std::string, int> bigram_frequencies;
 
+    switch (action) {
+
+    case 's': {
+
+        for (int i = 0; textholder[i]; i++) {
+            std::string c;
+            c += textholder[i];
+            frequencies[c]++;
+    }
+    break;
+    }
+
+    case 'm': {
+
+        for (int i = 1; textholder[i]; i++) {
+            std::string bigram;
+            bigram += textholder[i-1];
+            bigram += textholder[i];
+            frequencies[bigram]++;
+    }
+    break;
+    }
+
+    default:
+        break;
+    }
+
+    return frequencies;
+    
     
 }
 
+void postprocess(std::string& textholder, char action) {
 
+    switch (action)
+    {
+    case 'e': {
 
-/*
-Для однобуквенных сочетаний (монограмм):
-Используйте std::map<char, int>.
-Читайте файл посимвольно.
-Для каждого прочитанного символа c увеличивайте значение счетчика в мапе: frequencies[c]++;.
-Если символа еще нет в мапе, он будет автоматически добавлен со значением 1.
- */
+         
 
-/*     
-Для двухбуквенных сочетаний (биграмм):
-Используйте std::map<std::string, int>.
-Для формирования биграмм понадобится "скользящее окно" из двух символов. Читайте из файла первый символ prev_char.
-Затем в цикле читайте следующий символ current_char.
-Создайте строку (биграмму) из этих двух символов: std::string bigram; bigram += prev_char; bigram += current_char;.
-Увеличьте счетчик для этой биграммы: bigram_frequencies[bigram]++;.
-"Сдвиньте" окно: prev_char = current_char; и перейдите к следующей итерации.
- */
+        break;
+    }
+        
+    
+    default:
+        break;
+    }
 
-void postprocess(std::string& textholder, char action);
+}
 
 int main() {
 
@@ -76,7 +105,7 @@ int main() {
     std::string editedtextholder = formEdit(textholder);
     pushTo(outputFile, editedtextholder);
 
-    
+
 
 
     return 0;

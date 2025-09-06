@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/app.csproj": {}
+    "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/Calc/app.csproj": {}
   },
   "projects": {
-    "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/app.csproj": {
+    "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/Calc/app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/app.csproj",
+        "projectUniqueName": "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/Calc/app.csproj",
         "projectName": "app",
-        "projectPath": "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/app.csproj",
+        "projectPath": "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/Calc/app.csproj",
         "packagesPath": "/home/baabbabai/.nuget/packages/",
-        "outputPath": "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/test/obj/",
+        "outputPath": "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/Calc/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/baabbabai/.nuget/NuGet/NuGet.Config"
