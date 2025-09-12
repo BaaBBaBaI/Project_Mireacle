@@ -1,0 +1,15 @@
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/bin/Debug/net9.0/2nd-task
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/bin/Debug/net9.0/2nd-task.deps.json
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/bin/Debug/net9.0/2nd-task.runtimeconfig.json
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/bin/Debug/net9.0/2nd-task.dll
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/bin/Debug/net9.0/2nd-task.pdb
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.GeneratedMSBuildEditorConfig.editorconfig
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.AssemblyInfoInputs.cache
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.AssemblyInfo.cs
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.csproj.CoreCompileInputs.cache
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.sourcelink.json
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.dll
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/obj/Debug/net9.0/refint/2nd-task.dll
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.pdb
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.genruntimeconfig.cache
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2nd-task/obj/Debug/net9.0/ref/2nd-task.dll

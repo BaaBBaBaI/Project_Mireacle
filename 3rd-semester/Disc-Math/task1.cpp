@@ -3,6 +3,7 @@
 #include <string>
 #include <cctype>
 #include <map>
+#include <bits/stdc++.h>
 #include <cmath>
 
 void takeFrom(std::ifstream& file, std::string& textholder) {
@@ -39,10 +40,10 @@ void pushTo(std::ofstream& outputFile, std::string& textholder) {
 
 }
 
-std::map<std::string, int> calcStr(std::string& textholder, char action) {
+std::map<std::string, double> calcStr(std::string& textholder, char action) {
 
-    std::map<std::string, int> frequencies;
-    std::map<std::string, int> bigram_frequencies;
+    std::map<std::string, double> frequencies;
+    std::map<std::string, double> bigram_frequencies;
 
     switch (action) {
 
@@ -76,13 +77,24 @@ std::map<std::string, int> calcStr(std::string& textholder, char action) {
     
 }
 
+
+double logg (double a) { return (a > 0.0) ? log2(a) : 0.0; }
+
+double entropy (std::map<std::string, double> gram) {
+    
+    long double total = 0;
+    
+}
+
 void postprocess(std::string& textholder, char action) {
 
     switch (action)
     {
     case 'e': {
 
-         
+        for (char z : textholder) {
+
+         }
 
         break;
     }
