@@ -1,0 +1,15 @@
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/bin/Debug/net9.0/2RT-1st-task
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/bin/Debug/net9.0/2RT-1st-task.deps.json
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/bin/Debug/net9.0/2RT-1st-task.runtimeconfig.json
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/bin/Debug/net9.0/2RT-1st-task.dll
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/bin/Debug/net9.0/2RT-1st-task.pdb
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.GeneratedMSBuildEditorConfig.editorconfig
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfoInputs.cache
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfo.cs
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.csproj.CoreCompileInputs.cache
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.sourcelink.json
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.dll
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/refint/2RT-1st-task.dll
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.pdb
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.genruntimeconfig.cache
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/ref/2RT-1st-task.dll
