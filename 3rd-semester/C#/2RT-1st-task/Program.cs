@@ -78,6 +78,13 @@ class Program
                 Exer6.Petri(n[0], n[1]);
                 break;
             } // end of case 6
+            case 7:
+            {
+                Console.WriteLine("Input all: a b w h n");
+                double[] z  = Console.ReadLine().Split(' ').Select(x => Convert.ToDouble(x)).ToArray();
+                double res = Exer7.Mars(z[0], z[1], z[2], z[3], z[4]); Console.WriteLine(res);
+                break;
+            }
         }
     }
 }
