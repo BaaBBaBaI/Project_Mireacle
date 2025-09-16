@@ -13,6 +13,13 @@ class Program
         switch (exercise)
         {
             case 1:
+                /*
+                   Task:
+                   Series
+                   Implement a software product using C# with the following functionality:
+                   Calculate the value of the function f(x) (corresponding to your
+                   option) using the Maclaurin series with a given accuracy e (e and x are entered from the keyboard, e <0.01);
+                   Calculate the n-th term of the series (n and x are entered from the keyboard). */
             {
                 Console.WriteLine("Write x and n");
                 double[] xn = Console.ReadLine().Split(' ').Select(x => Convert.ToDouble(x)).ToArray();
@@ -64,6 +71,13 @@ class Program
             {
                 Exer5.CoffeeMachine(); break;
             } // end of case 5
+            case 6:
+            {
+                Console.Write("Input your bacteria and your droplets of antibiotics: ");
+                int[] n = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
+                Exer6.Petri(n[0], n[1]);
+                break;
+            } // end of case 6
         }
     }
 }
