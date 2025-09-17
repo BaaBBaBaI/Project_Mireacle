@@ -1,1 +1,11 @@
 hellomynameisartemimfrommoscowthisisatestcapsedloweredloremipsumdolorsitametconsecteturadipiscingelitseddoeiusmodtemporincididuntutlaboreetdoloremagnaaliquautenimadminimveniamquisnostrudexercitationullamcolaborisnisiutaliquipexeacommodoconsequatduisauteiruredolorinreprehenderitinvoluptatevelitessecillumdoloreeufugiatnullapariaturexcepteursintoccaecatcupidatatnonproidentsuntinculpaquiofficiadeseruntmollitanimidestlaborum
+Code length for uniform coding: 5.45943
+Redundancy of the original text: 1.14588
+
+--- after 20% most frequent deletion ---
+begining entropy : 4.31355
+new entropy: 3.43993
+
+--- after 20 least frequent deletion ---
+begining entropy : 4.31355
+new entropy: 4.01559
