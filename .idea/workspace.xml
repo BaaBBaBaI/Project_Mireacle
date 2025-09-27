@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="463d27de-1fcf-43e6-97ad-7a8bde661868" name="Changes" comment="" />
+    <list default="true" id="463d27de-1fcf-43e6-97ad-7a8bde661868" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/data_source_mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2nd-task/bin/Debug/net9.0/2nd-task.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2nd-task/bin/Debug/net9.0/2nd-task.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2nd-task/obj/Debug/net9.0/2nd-task.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/Calc/bin/Debug/net9.0/app.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/Calc/bin/Debug/net9.0/app.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/Calc/obj/Debug/net9.0/app.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/Calc/obj/Debug/net9.0/app.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/Calc/obj/Debug/net9.0/app.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/Calc/obj/Debug/net9.0/app.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/Calc/obj/Debug/net9.0/app.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/Calc/obj/Debug/net9.0/app.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/Calc/obj/Debug/net9.0/app.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/Calc/obj/Debug/net9.0/app.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/TIP/one/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/TIP/one/test.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -20,9 +38,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="32Yb0IsRTPV2TMCXPrmfBMex9yQ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -34,8 +52,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.task.html.executor": "Debug",
+    "JavaScript Debug.task1.html.executor": "Run",
+    "JavaScript Debug.task1_04.html.executor": "Debug",
+    "JavaScript Debug.task2.html.executor": "Debug",
+    "JavaScript Debug.task3.html.executor": "Debug",
+    "JavaScript Debug.task4.html.executor": "Debug",
     "JavaScript Debug.test.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.all.executor": "Run",
+    "Node.js.task1.js.executor": "Run",
+    "Node.js.task5.js.executor": "Run",
     "Node.js.test.js.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -48,7 +75,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "/home/baabbabai/.nvm/versions/node/v22.19.0/bin/node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.sync",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -64,7 +91,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-WS-252.25557.126" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.162" />
       </set>
     </attachedChunks>
   </component>
@@ -76,6 +103,10 @@
       <option name="presentableId" value="Default" />
       <updated>1757600229423</updated>
       <workItem from="1757600231475" duration="2593000" />
+      <workItem from="1758190129547" duration="26000" />
+      <workItem from="1758190164805" duration="35000" />
+      <workItem from="1758204311892" duration="1884000" />
+      <workItem from="1758806872987" duration="4529000" />
     </task>
     <servers />
   </component>

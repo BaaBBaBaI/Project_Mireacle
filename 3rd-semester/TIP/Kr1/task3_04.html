@@ -1,0 +1,50 @@
+
+<!--Веневцев Артем Андреевич ЭФБО-06-24-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        let chislo = parseInt( prompt("Введите число:"));
+
+        let arr = [];
+
+        for (let i = 1; i <= chislo; i++) {
+
+            arr[i] = Math.floor(Math.random() * 1000) ;
+
+        }
+
+        let flag;
+        do {
+            flag = false;
+            for (let i = 0; i < arr.length - 1; i++) {
+
+                if (arr[i] > arr[i + 1]) {
+
+                    const t = arr[i]; arr[i] = arr[i + 1]; arr[i + 1] = t;
+                    flag = true;
+
+                }
+            }
+            
+        } while (flag);
+
+        for (let i = 1; i <= chislo; i++) {
+
+            console.log(arr[i]);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+<!--Напишите программу, которая запрашивает у пользователя размер массива и заполняет его числами.
+Затем сортирует массив по возрастанию с использованием метода пузырька.-->
