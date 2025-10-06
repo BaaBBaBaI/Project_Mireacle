@@ -21,9 +21,15 @@ class Program
                    option) using the Maclaurin series with a given accuracy e (e and x are entered from the keyboard, e <0.01);
                    Calculate the n-th term of the series (n and x are entered from the keyboard). */
             {
-                Console.WriteLine("Write x and n");
+                
+                Console.WriteLine("Write x and epsilon");
                 double[] xn = Console.ReadLine().Split(' ').Select(x => Convert.ToDouble(x)).ToArray();
-                double result = Exer1.CountFormula(xn[0], xn[1]);
+                double result = Exer1.CosByMacl(xn[0], xn[1]);
+                Console.WriteLine($"The result is: {result}");
+                
+                Console.WriteLine("Write x and n");
+                xn = Console.ReadLine().Split(' ').Select(x => Convert.ToDouble(x)).ToArray();
+                result = Exer1.CountFormula(xn[0], xn[1]);
                 Console.WriteLine($"The result is: {result}");
                 break;
             }

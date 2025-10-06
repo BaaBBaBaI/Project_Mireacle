@@ -11,7 +11,7 @@ void takeFrom(std::ifstream& file, std::string& textholder) {
     if(file.is_open()) {
         std::string templine;
         while(std::getline(file, templine)) {
-            textholder += templine; 
+            textholder +=   templine; 
         }
         file.close();
     } else {std::cerr << "unable to open file" << std::endl;}
