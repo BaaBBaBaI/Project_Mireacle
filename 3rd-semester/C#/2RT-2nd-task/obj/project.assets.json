@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/2RT-1st-task.csproj",
-      "projectName": "2RT-1st-task",
-      "projectPath": "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/2RT-1st-task.csproj",
+      "projectUniqueName": "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-2nd-task/2RT-2nd-task.csproj",
+      "projectName": "2RT-2nd-task",
+      "projectPath": "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-2nd-task/2RT-2nd-task.csproj",
       "packagesPath": "/home/baabbabai/.nuget/packages/",
-      "outputPath": "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-1st-task/obj/",
+      "outputPath": "/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/2RT-2nd-task/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/baabbabai/.nuget/NuGet/NuGet.Config"
