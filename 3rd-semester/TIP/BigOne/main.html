@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Экзаменационный билет - Решение</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .controls { margin: 20px 0; padding: 15px; background: #f0f0f0; border-radius: 5px; }
+        label { display: block; margin-top: 10px; }
+        input { margin: 5px 0; padding: 5px; width: 300px; }
+        button { margin-top: 5px; padding: 8px 15px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 3px; }
+        button:hover { background: #0056b3; }
+        #result-area { margin-top: 10px; font-weight: bold; color: #333; }
+    </style>
+</head>
+<body>
+
+<h1>Практические задания</h1>
+
+<div class="controls">
+    <h3>Задание 1: Окружности</h3>
+    <label>Радиус окружностей через запятую</label>
+    <input type="text" id="circleAmount" placeholder="например: 1.5, 3, 2, 12">
+    <button onclick="CalculateRadius()">Найти площади</button>
+    <div id="result-area"></div>
+
+</div>
+
+
+<div class="controls">
+    <h3>Задание 2: HTML Структура</h3>
+
+    <div id="task2"></div>
+
+<!--    <label>Текстовое Поле 1</label>-->
+<!--    <input  type="text" id="text-field1">-->
+
+<!--    <label>Текстовое поле 2</label>-->
+<!--    <input  type="text" id="text-field2">-->
+
+<!--    <h3>Список:</h3>-->
+
+</div>
+
+<script>
+   function CalculateRadius() {
+       const input = document.getElementById('circleAmount').value;
+       const output = document.getElementById('result-area');
+
+       if (!input.trim()) {
+           output.innerHTML = "Введите пожалуйста числа";
+           return;
+       }
+
+       const numbers = input.split(',').map(n => parseFloat(n.trim())).filter(n => !isNaN(n));
+
+       if (numbers.length < 1) {
+           output.innerHTML = "Ошибка с форматом. Введите числа через запятую."; return;
+       }
+
+       const area = numbers.map(n => {
+           if ( n < 0 ) {
+               output.innerHTML = "Ошибка с Радиусом. Радиус должен быть больше 0."; return;
+           }
+           const val = Math.pow(n,2) * Math.PI;
+           return val;
+       });
+
+       const areasumm = area.reduce((a, b) => a + b, 1);
+
+       output.innerHTML = `Площадь каждой окружности: ${area.map(n => n.toFixed(2)).join(', ')}
+       \n Общее произведение ${areasumm.toFixed(3)}`;
+
+   }
+
+   const a = document.getElementById('task2');
+
+   const input = document.createElement("input");
+   input.type = "text";
+   input.placeholder = "Сколько создать? (enter)";
+   a.appendChild(input);
+
+   const divider = document.createElement("div");
+   divider.style.width = "100%"
+   a.appendChild(divider);
+
+   const input2 = document.createElement("input");
+   input2.type = "text";
+   input2.placeholder = "Текст нового элемента.";
+   a.appendChild(input2);
+
+   const divider2 = document.createElement("div");
+   divider2.style.width = "100%"
+   a.appendChild(divider2);
+
+   const btn = document.createElement("button");
+   btn.type = "button";
+   btn.textContent = "Добавить элемент";
+   a.appendChild(btn);
+
+   const h = document.createElement("h2");
+   h.textContent = "Список: музыка";
+   a.appendChild(h);
+
+   const ul = document.createElement("ul");
+   a.appendChild(ul);
+
+
+
+   function buildList(n) {
+       ul.innerHTML = "";
+       for (let i = 1; i <= n; i++) {
+           const li = document.createElement("li");
+           li.textContent = "Музыка №" + i;
+           ul.appendChild(li);
+       }
+   }
+
+   input.addEventListener("keydown", (e) => {
+       if (e.key !== "Enter") return;
+
+       const raw = input.value;
+       const n = parseInt(raw, 10);
+
+       if (!Number.isFinite(n) || n <= 0) {
+           alert("Введите целое число больше 0.");
+           input.focus();
+           return;
+       }
+
+       buildList(n);
+       input.value = "";
+   });
+
+   btn.addEventListener("click", () => {
+       const text = input2.value.trim();
+       if (text.length === 0) {
+           alert("Введите текст для нового элемента списка.");
+           input2.focus();
+           return;
+       }
+
+       const li = document.createElement("li");
+       li.textContent = text;
+       ul.appendChild(li);
+
+       input2.value = "";
+       input2.focus();
+   });
+
+
+
+
+</script>
+</body>
+</html>

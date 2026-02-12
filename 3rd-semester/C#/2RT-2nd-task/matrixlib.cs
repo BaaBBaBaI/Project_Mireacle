@@ -107,128 +107,80 @@ public abstract class MatrixEv
         return resultMatrix;
     }
 
-    public static double[][] MatrixMultiplication(double[][] matrix1, double[][] matrix2) // Реализация умножения матрицы
-    {
-        
-        // Оптимизация через алгоритм Штрассена не будет произведена, однако ее реализация возможна
     
-        
-        if (matrix1[0].Length == matrix2.Length)
+    public static double[][] MatrixMultiplication(double[][] matrix1, double[][] matrix2)
+    {
+        if (matrix1[0].Length != matrix2.Length) throw new ArgumentException("Incompatible shapes");
+        int n = matrix1.Length, m = matrix1[0].Length, p = matrix2[0].Length;
+        double[][] result = new double[n][];
+        for (int i = 0; i < n; i++)
         {
-            (int, int) matrixproportions = (matrix2[0].Length, matrix1.Length);
-            double[][] result = new double[matrixproportions.Item1][];
-            for (int i = 0; i < matrixproportions.Item1; i++)
+            result[i] = new double[p];
+            for (int j = 0; j < p; j++)
             {
-                result[i] = new double[matrixproportions.Item2];   // allocate each row
+                double sum = 0;
+                for (int k = 0; k < m; k++)
+                    sum += matrix1[i][k] * matrix2[k][j];
+                result[i][j] = sum;
             }
-            for (int i = 0; i < matrix1.Length; i++)
-            {
-                
-                for (int j = 0; j < matrix2[0].Length; j++)
-                {
-                    double sum = 0;
-                    for (int k = 0; k < matrix1.Length; k++)
-                    {
-                        sum += matrix1[i][j] * matrix2[i][j];
-                    }
-
-                    result[i][j] = sum;
-
-                }
-                
-            }
-            return result;
-            
-            
         }
-        else
-        {
-            throw new ArgumentException("Matrices cannot be multiplied");
-        }
+        return result;
     }
 
-    public static double MatrixDeterminant(double[][] matrix) // Реализация получения детерминанта матрицы
+    public static double MatrixDeterminant(double[][] matrix)
     {
-        double determinant = 0;
+        if (matrix == null) throw new ArgumentException("Matrix cannot be null.");
+        int n = matrix.Length;
+        if (n == 0) throw new ArgumentException("Matrix cannot be empty.");
+        for (int i = 0; i < n; i++)
+            if (matrix[i] == null || matrix[i].Length != n)
+                throw new ArgumentException("Matrix should be a square.");
 
-        if (matrix.Length != matrix[0].Length) { throw new ArgumentException("Matrix should be a square."); }
+        if (n == 1) return matrix[0][0];
+        if (n == 2) return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
 
-        switch (matrix[0].Length)
-        {
-            case 0:
-            {
-                determinant = 1;
-                return determinant;
-            }
-            case 1:
-            {
-                determinant = matrix[0][0];
-                return determinant;
-            }
-            case 2:
-            {
-                determinant = matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
-                return determinant;
-            }
-        }
-        
-        double[][]? matrixCopy = matrix.Clone() as double[][];
+        // Глубокая копия jagged-массива
+        double[][] matrixCopy = new double[n][];
+        for (int i = 0; i < n; i++)
+            matrixCopy[i] = (double[])matrix[i].Clone();
+
         int s = 1;
-        
-        if (matrixCopy == null) throw new ArgumentException("Matrix copy cannot be null (error in matrix or matrix copy)");
-        
-        for (int i = 0; i < matrix.Length; i++)
+
+        for (int i = 0; i < n; i++)
         {
             int vot = i;
-            double maxAbs = Math.Abs(matrix[i][i]);
-            for (int r = i + 1; r < matrix.Length; r++)
+            double maxAbs = Math.Abs(matrixCopy[i][i]);
+            for (int r = i + 1; r < n; r++)
             {
-                if (matrixCopy != null)
-                {
-                    double v = Math.Abs(matrixCopy[r][i]);
-                    if (v > maxAbs) { maxAbs = v; vot = r; }
-                }
+                double v = Math.Abs(matrixCopy[r][i]);
+                if (v > maxAbs) { maxAbs = v; vot = r; }
             }
             if (maxAbs == 0.0) return 0.0;
 
             if (vot != i)
             {
-                for (int j = i; j < matrix.Length; j++)
-                {
-                    if (matrixCopy != null)
-                    {
-                        (matrixCopy[i][j], matrixCopy[vot][j]) = (matrixCopy[vot][j], matrixCopy[i][j]);
-                    }
-                }
+                (matrixCopy[i], matrixCopy[vot]) = (matrixCopy[vot], matrixCopy[i]);
                 s = -s;
             }
 
-            if (matrixCopy != null)
-            {
-                double ak = matrixCopy[i][i];
+            double ak = matrixCopy[i][i];
 
-                for (int z = i + 1; z < matrix.Length; z++)
-                {
-                    double factor = matrixCopy[z][i] / ak;
-                    matrixCopy[z][i] = 0.0;
-                    for (int l = i + 1; l < matrix.Length; l++)
-                    {
-                        matrixCopy[z][l] -= factor * matrixCopy[i][l];
-                    }
-                }
+            for (int z = i + 1; z < n; z++)
+            {
+                double factor = matrixCopy[z][i] / ak;
+                matrixCopy[z][i] = 0.0;
+                for (int l = i + 1; l < n; l++)
+                    matrixCopy[z][l] -= factor * matrixCopy[i][l];
             }
-            
-            
         }
-        
-        determinant = s;
-        for (int a = 0; a < matrixCopy.Length; a++)
-        {
+
+        double determinant = s;
+        for (int a = 0; a < n; a++)
             determinant *= matrixCopy[a][a];
-        }
-        
+
         return determinant;
     }
+
 
     public static double[][] MatrixInvert(double[][] matrix) // still have finished
     {
@@ -308,38 +260,23 @@ public abstract class MatrixEv
 
     public static double[][] MatrixTranspond(double[][] matrix)
     {
-        
         if (matrix == null) throw new ArgumentException("Matrix cannot be null.");
-        
+
         int cols = matrix.Length; if (cols == 0) throw new ArgumentException("Matrix cannot be empty.");
-
         int rows = matrix[0].Length; if (rows == 0) throw new ArgumentException("Matrix rows cannot be empty.");
-        
-        for (int i = 0; i < cols; i++)
-        {
-            if (matrix[i] == null || matrix.Length != cols) throw new ArgumentException("Matrix cannot be null or non rectangular.");
-        }
-        
-        // ---
-        
-        double[][]? transpondMatrix = new double[rows][];
 
+        for (int i = 0; i < cols; i++) if (matrix[i] == null || matrix[i].Length != rows) throw new ArgumentException("Matrix cannot be null or non rectangular.");
+
+        double[][] transpondMatrix = new double[rows][];
+        
         for (int i = 0; i < rows; i++)
-        {
+            
             transpondMatrix[i] = new double[cols];
-        }
 
         for (int i = 0; i < cols; i++)
-        {
-            for (int j = 0; j < rows; j++)
-            {
-                
-                transpondMatrix[j][i] = matrix[i][j];
-                
-            }
-        }
+        for (int j = 0; j < rows; j++)
+            transpondMatrix[j][i] = matrix[i][j];
 
-        
         return transpondMatrix;
     }
 

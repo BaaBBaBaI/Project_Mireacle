@@ -6,7 +6,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Select exercise: {1,2,3,4,5}");
+        Console.WriteLine("Select exercise: {1,2,3,4,5,6,7}");
         
         int exercise = Convert.ToInt32(Console.ReadLine());
         

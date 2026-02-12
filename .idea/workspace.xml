@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="463d27de-1fcf-43e6-97ad-7a8bde661868" name="Changes" comment="" />
+    <list default="true" id="463d27de-1fcf-43e6-97ad-7a8bde661868" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/data_source_mapping.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/bin/Debug/net9.0/2RT-1st-task" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/bin/Debug/net9.0/2RT-1st-task" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/bin/Debug/net9.0/2RT-1st-task.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/bin/Debug/net9.0/2RT-1st-task.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/apphost" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/bin/Debug/net9.0/2RT-2nd-task.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/bin/Debug/net9.0/2RT-2nd-task.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/matrixlib.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/matrixlib.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/Disc-Math/KR2/task4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/Disc-Math/KR2/task4.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/Disc-Math/KR2/task5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/Disc-Math/KR2/task5.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +37,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -32,40 +55,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.Test.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.task.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.task1.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.task1_04.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.task2.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.task3.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.task4.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.test.html.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Node.js.all.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.task1.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.task5.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.test.js.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/baabbabai/.nvm/versions/node/v22.19.0/bin/node&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;/home/baabbabai/.nvm/versions/node/v22.19.0/bin/node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Test.html.executor": "Debug",
+    "JavaScript Debug.index.html.executor": "Debug",
+    "JavaScript Debug.main.html.executor": "Debug",
+    "JavaScript Debug.task.html.executor": "Debug",
+    "JavaScript Debug.task1.html.executor": "Run",
+    "JavaScript Debug.task1_04.html.executor": "Debug",
+    "JavaScript Debug.task2.html.executor": "Debug",
+    "JavaScript Debug.task3.html.executor": "Debug",
+    "JavaScript Debug.task4.html.executor": "Debug",
+    "JavaScript Debug.template.html.executor": "Debug",
+    "JavaScript Debug.test.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.all.executor": "Run",
+    "Node.js.main.js.executor": "Run",
+    "Node.js.task1.js.executor": "Run",
+    "Node.js.task5.js.executor": "Run",
+    "Node.js.test.js.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/baabbabai/.nvm/versions/node/v22.19.0/bin/node",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/home/baabbabai/.nvm/versions/node/v22.19.0/bin/node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Node.js.all">
+}]]></component>
+  <component name="RunManager">
     <configuration name="all" type="NodeJSConfigurationType" path-to-node="$USER_HOME$/.nvm/versions/node/v22.19.0/bin/node" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/3rd-semester/TIP/one">
       <method v="2" />
     </configuration>
@@ -76,7 +104,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.162" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28539.21" />
       </set>
     </attachedChunks>
   </component>
@@ -95,6 +123,9 @@
       <workItem from="1759244693039" duration="60000" />
       <workItem from="1759413111887" duration="2736000" />
       <workItem from="1759960955539" duration="8000" />
+      <workItem from="1768781138942" duration="613000" />
+      <workItem from="1768816634248" duration="11231000" />
+      <workItem from="1770882064810" duration="2992000" />
     </task>
     <servers />
   </component>

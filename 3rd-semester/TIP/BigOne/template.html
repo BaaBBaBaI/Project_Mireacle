@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Экзаменационный билет - Решение</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .block { padding: 10px; margin: 5px; border: 1px solid #ccc; }
+        .controls { margin: 20px 0; padding: 15px; background: #f0f0f0; border-radius: 5px; }
+        label { display: block; margin-top: 10px; }
+        input { margin: 5px 0; padding: 5px; width: 300px; }
+        button { margin-top: 5px; padding: 8px 15px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 3px; }
+        button:hover { background: #0056b3; }
+        #result-area { margin-top: 10px; font-weight: bold; color: #333; }
+
+        /* Пример класса для задания 2.2 */
+        .active { border: 2px solid blue; }
+    </style>
+</head>
+<body>
+
+<h1>Практическое задание</h1>
+
+<!-- Часть 1: Котангенсы -->
+<div class="controls">
+    <h3>Задача 1: Котангенсы</h3>
+    <label>Введите числа через запятую (в радианах):</label>
+    <input type="text" id="numbersInput" placeholder="Например: 1, 0.5, 2">
+    <br>
+    <button onclick="calculateCotangents()">Рассчитать котангенсы и произведение</button>
+    <div id="result-area"></div>
+</div>
+
+<!-- Часть 2: DOM манипуляции -->
+<div class="controls">
+    <h3>Задача 2: Работа с DOM</h3>
+
+    <label>Текстовое поле 1 (Имя класса для жирного шрифта):</label>
+    <input type="text" id="classInput" placeholder="Введите 'target'">
+    <button onclick="makeBold()">Сделать жирным по классу</button>
+
+    <label>Текстовое поле 2 (Резервное поле по заданию):</label>
+    <input type="text" id="secondInput" placeholder="Просто текстовое поле">
+
+    <br><br>
+    <button onclick="highlightActive()">Покрасить активный (class="active") в зеленый</button>
+</div>
+
+<!-- 5 Блоков DIV для тестов -->
+<h3>Тестовые блоки:</h3>
+<div class="block target">Блок 1 (class="target")</div>
+<div class="block active">Блок 2 (class="active") - Это активный элемент</div>
+<div class="block target">Блок 3 (class="target")</div>
+<div class="block">Блок 4 (без особых классов)</div>
+<div class="block target active">Блок 5 (class="target active")</div>
+
+<script>
+    // --- Решение Задачи 1 ---
+    function calculateCotangents() {
+        const input = document.getElementById('numbersInput').value;
+        const resultArea = document.getElementById('result-area');
+
+        if (!input.trim()) {
+            resultArea.innerHTML = "Пожалуйста, введите числа.";
+            return;
+        }
+
+        // Преобразуем строку в массив чисел
+        const numbers = input.split(',').map(n => parseFloat(n.trim())).filter(n => !isNaN(n));
+
+        if (numbers.length === 0) {
+            resultArea.innerHTML = "Некорректный ввод чисел.";
+            return;
+        }
+
+        // Считаем котангенсы (ctg(x) = 1 / tan(x))
+        // Math.tan принимает радианы. Если нужны градусы, нужно конвертировать: x * Math.PI / 180
+        const cotangents = numbers.map(num => {
+            const tan = Math.tan(num);
+            if (Math.abs(tan) < 1e-10) return Infinity; // Защита от деления на 0
+            return 1 / tan;
+        });
+
+        // Считаем произведение
+        const product = cotangents.reduce((acc, val) => acc * val, 1);
+
+        resultArea.innerHTML = `
+                Котангенсы: [${cotangents.map(n => n.toFixed(3)).join(', ')}]<br>
+                Произведение: ${product.toFixed(3)}
+            `;
+    }
+
+    // --- Решение Задачи 2.1 ---
+    function makeBold() {
+        const className = document.getElementById('classInput').value.trim();
+        if (!className) {
+            alert("Введите имя класса в первое поле!");
+            return;
+        }
+
+        // Находим все элементы по введенному классу
+        const elements = document.querySelectorAll('.' + className);
+
+        if(elements.length === 0) {
+            alert("Элементы с таким классом не найдены.");
+        }
+
+        elements.forEach(el => {
+            el.style.fontWeight = 'bold';
+        });
+    }
+
+    // --- Решение Задачи 2.2 ---
+    function highlightActive() {
+        // Находим элементы с классом "active"
+        const activeElements = document.querySelectorAll('.active');
+
+        activeElements.forEach(el => {
+            el.style.backgroundColor = 'lightgreen';
+        });
+    }
+</script>
+</body>
+</html>

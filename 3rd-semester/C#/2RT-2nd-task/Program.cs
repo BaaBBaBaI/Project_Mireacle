@@ -125,11 +125,17 @@ class Program
         
         MatrixEv.MatrixOutput(matrixT);
         
-        double[][] matrixEq = MatrixEv.MatrixEqSysSolve(matrix);
-        
         Console.WriteLine("-------- eq: --------");
         
-        MatrixEv.MatrixOutput(matrixEq);
+        double[][] aug = new double[proportions.n][];
+        for (int i = 0; i < proportions.n; i++)
+        {
+            aug[i] = new double[proportions.m + 1];
+            Array.Copy(matrix[i], aug[i], proportions.m);
+            aug[i][proportions.m] = matrix2[i][0]; // правая часть
+        }
+
+        double[][] matrixEq = MatrixEv.MatrixEqSysSolve(aug);
         
         
         return;

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif;
+  background-color: #efc384 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.product-card {
+  background-color: #e6ceac;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+.product-card:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+.product-card-header {
+  padding-bottom: 20px;
+}
+.product-card-image {
+  width: 100%;
+}
+.product-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.product-card-title {
+  font-size: 24px;
+  margin: 15px 0 5px;
+  color: #000000;
+}
+.product-card-desc {
+  font-size: 16px;
+  color: rgb(76.5, 76.5, 76.5);
+  margin: 0 0 15px;
+  font-style: italic;
+}
+.product-card-price {
+  font-size: 18px;
+  color: #000000;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.product-card-button {
+  background-color: #000 !important;
+  color: #e6ceac;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+  display: inline-block;
+  margin-top: 15px;
+}
+.product-card-button:hover {
+  color: rgb(218.1944444444, 182.8611111111, 132.8055555556);
+}
+.product-card-button::after {
+  content: "Забрать Котика";
+}
+
+/*# sourceMappingURL=style.css.map */

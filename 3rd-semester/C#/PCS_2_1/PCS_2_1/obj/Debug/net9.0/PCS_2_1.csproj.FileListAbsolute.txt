@@ -1,0 +1,15 @@
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/bin/Debug/net9.0/PCS_2_1
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/bin/Debug/net9.0/PCS_2_1.deps.json
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/bin/Debug/net9.0/PCS_2_1.runtimeconfig.json
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/bin/Debug/net9.0/PCS_2_1.dll
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/bin/Debug/net9.0/PCS_2_1.pdb
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/obj/Debug/net9.0/PCS_2_1.GeneratedMSBuildEditorConfig.editorconfig
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/obj/Debug/net9.0/PCS_2_1.AssemblyInfoInputs.cache
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/obj/Debug/net9.0/PCS_2_1.AssemblyInfo.cs
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/obj/Debug/net9.0/PCS_2_1.csproj.CoreCompileInputs.cache
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/obj/Debug/net9.0/PCS_2_1.sourcelink.json
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/obj/Debug/net9.0/PCS_2_1.dll
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/obj/Debug/net9.0/refint/PCS_2_1.dll
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/obj/Debug/net9.0/PCS_2_1.pdb
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/obj/Debug/net9.0/PCS_2_1.genruntimeconfig.cache
+/home/baabbabai/GitHub/Project_Mireacle/3rd-semester/C#/PCS_2_1/PCS_2_1/obj/Debug/net9.0/ref/PCS_2_1.dll

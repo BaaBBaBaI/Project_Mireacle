@@ -31,7 +31,7 @@ int main() {
             std::cin >> next_val;
             current_lcm = lcm(current_lcm, next_val);
         }
-        std::cout << "LCM: " << current_lcm << std::endl;
+        std::cout << current_lcm << std::endl;
     }
     return 0;
 }
