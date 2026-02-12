@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="463d27de-1fcf-43e6-97ad-7a8bde661868" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/data_source_mapping.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/bin/Debug/net9.0/2RT-1st-task" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/bin/Debug/net9.0/2RT-1st-task" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/bin/Debug/net9.0/2RT-1st-task.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/bin/Debug/net9.0/2RT-1st-task.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/2RT-1st-task.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-1st-task/obj/Debug/net9.0/apphost" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/bin/Debug/net9.0/2RT-2nd-task.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/bin/Debug/net9.0/2RT-2nd-task.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/matrixlib.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/matrixlib.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/C#/2RT-2nd-task/obj/Debug/net9.0/2RT-2nd-task.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/Disc-Math/KR2/task4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/Disc-Math/KR2/task4.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/Disc-Math/KR2/task5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/Disc-Math/KR2/task5.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="463d27de-1fcf-43e6-97ad-7a8bde661868" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +103,7 @@
       <workItem from="1759960955539" duration="8000" />
       <workItem from="1768781138942" duration="613000" />
       <workItem from="1768816634248" duration="11231000" />
-      <workItem from="1770882064810" duration="2992000" />
+      <workItem from="1770882064810" duration="3356000" />
     </task>
     <servers />
   </component>
