@@ -1,0 +1,26 @@
+GET http://localhost:3000/products
+Accept: application/json
+
+### 2. Получить конкретную пару (например, SJordan)
+GET http://localhost:3000/products/2
+Accept: application/json
+
+### 3. Добавить новую пару
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Nike Air Max",
+  "price": 180
+}
+
+### 4. Изменить цену у первой пары (Jordan)
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+  "price": 220
+}
+
+### 5. Удалить пару из ассортимента
+DELETE http://localhost:3000/products/3

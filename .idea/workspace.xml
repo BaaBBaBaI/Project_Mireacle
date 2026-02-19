@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="463d27de-1fcf-43e6-97ad-7a8bde661868" name="Changes" comment="" />
+    <list default="true" id="463d27de-1fcf-43e6-97ad-7a8bde661868" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/dataSources.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,15 +16,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
+        <option value="package.json" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HttpClientOnboardingState"><![CDATA[{
+  "isOnboardingCommentShown": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -36,6 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "HTTP Request.All in test.executor": "Run",
     "JavaScript Debug.Test.html.executor": "Debug",
     "JavaScript Debug.index.html.executor": "Debug",
     "JavaScript Debug.main.html.executor": "Debug",
@@ -49,6 +58,7 @@
     "JavaScript Debug.test.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Node.js.all.executor": "Run",
+    "Node.js.app.js.executor": "Run",
     "Node.js.main.js.executor": "Run",
     "Node.js.task1.js.executor": "Run",
     "Node.js.task5.js.executor": "Run",
@@ -57,8 +67,10 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "22.19.0",
+    "javascript.nodejs.core.library.typings.version": "22.19.11",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/baabbabai/.nvm/versions/node/v22.19.0/bin/node",
+    "last_opened_file_path": "/home/baabbabai/GitHub/bebebasbababoy",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -71,13 +83,42 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="All in test" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="All in test" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr2/test.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Project_Mireacle/4th-semester/Frontend-backend/Pr1/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="all" type="NodeJSConfigurationType" path-to-node="$USER_HOME$/.nvm/versions/node/v22.19.0/bin/node" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/3rd-semester/TIP/one">
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr2/app.js" working-dir="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr2">
       <method v="2" />
     </configuration>
     <configuration name="test.js" type="NodeJSConfigurationType" path-to-node="$USER_HOME$/.nvm/versions/node/v22.19.0/bin/node" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/3rd-semester/TIP/one">
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.All in test" />
+        <item itemvalue="Node.js.app.js" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -103,7 +144,9 @@
       <workItem from="1759960955539" duration="8000" />
       <workItem from="1768781138942" duration="613000" />
       <workItem from="1768816634248" duration="11231000" />
-      <workItem from="1770882064810" duration="3356000" />
+      <workItem from="1770882064810" duration="4488000" />
+      <workItem from="1771328194627" duration="30000" />
+      <workItem from="1771485500159" duration="4936000" />
     </task>
     <servers />
   </component>

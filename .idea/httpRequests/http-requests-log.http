@@ -1,0 +1,59 @@
+DELETE http://localhost:3000/products/3
+User-Agent: IntelliJ HTTP Client/WebStorm 2025.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-02-19T114137.200.html
+
+###
+
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+Content-Length: 18
+User-Agent: IntelliJ HTTP Client/WebStorm 2025.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "price": 220
+}
+
+<> 2026-02-19T114137-2.200.json
+
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+Content-Length: 44
+User-Agent: IntelliJ HTTP Client/WebStorm 2025.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nike Air Max",
+  "price": 180
+}
+
+<> 2026-02-19T114137.201.json
+
+###
+
+GET http://localhost:3000/products/2
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/WebStorm 2025.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2026-02-19T114137-1.200.json
+
+###
+
+GET http://localhost:3000/products
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/WebStorm 2025.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2026-02-19T114137.200.json
+
+###
+
