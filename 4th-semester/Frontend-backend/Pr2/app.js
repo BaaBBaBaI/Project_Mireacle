@@ -56,7 +56,7 @@ app.patch('/products/:id', (req, res) => {
 
 // Функция удаления
 app.delete('/products/:id', (req, res) => {
-    const productId = products.filter( p => p.id != req.params.id );
+    products = products.filter( p => p.id != req.params.id );
     res.send("Product deleted");
 })
 

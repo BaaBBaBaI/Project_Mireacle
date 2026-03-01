@@ -12,6 +12,9 @@
   },
   "private": true,
   "dependencies": {
-    "express": "^5.2.1"
+    "axios": "^1.13.6",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "nanoid": "^5.1.6"
   }
 }

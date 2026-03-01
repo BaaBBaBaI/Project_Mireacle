@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="463d27de-1fcf-43e6-97ad-7a8bde661868" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3rd-semester/BD_Industrial/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr2/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr2/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,18 +21,19 @@
       <list>
         <option value="HTML File" />
         <option value="SCSS File" />
-        <option value="JavaScript File" />
         <option value="package.json" />
         <option value="HTTP Request" />
+        <option value="JavaScript File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HttpClientOnboardingState"><![CDATA[{
-  "isOnboardingCommentShown": true
-}]]></component>
+  <component name="HttpClientOnboardingState">{
+  &quot;isOnboardingCommentShown&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -59,6 +63,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Node.js.all.executor": "Run",
     "Node.js.app.js.executor": "Run",
+    "Node.js.index.js.executor": "Run",
     "Node.js.main.js.executor": "Run",
     "Node.js.task1.js.executor": "Run",
     "Node.js.task5.js.executor": "Run",
@@ -83,6 +88,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr3/backend" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationStatuses">
       <map>
@@ -96,7 +106,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.app.js">
+  <component name="RunManager" selected="Node.js.index.js">
     <configuration name="All in test" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr2/test.http">
       <method v="2" />
     </configuration>
@@ -109,13 +119,17 @@
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr2/app.js" working-dir="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr2">
       <method v="2" />
     </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr3/frontend/src/api/index.js" working-dir="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr3/frontend/src/api">
+      <method v="2" />
+    </configuration>
     <configuration name="test.js" type="NodeJSConfigurationType" path-to-node="$USER_HOME$/.nvm/versions/node/v22.19.0/bin/node" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/3rd-semester/TIP/one">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.All in test" />
+        <item itemvalue="Node.js.index.js" />
         <item itemvalue="Node.js.app.js" />
+        <item itemvalue="HTTP Request.All in test" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -146,7 +160,9 @@
       <workItem from="1768816634248" duration="11231000" />
       <workItem from="1770882064810" duration="4488000" />
       <workItem from="1771328194627" duration="30000" />
-      <workItem from="1771485500159" duration="4936000" />
+      <workItem from="1771485500159" duration="5801000" />
+      <workItem from="1771530046060" duration="274000" />
+      <workItem from="1772365593099" duration="9408000" />
     </task>
     <servers />
   </component>
