@@ -25,18 +25,18 @@ You ventured into my uni repository. Here lies my laboratoty, practical work, as
 
 Projects and assignments are organized by semester for easy navigation:
 
-### 📁 [1st-semester](./1st-semester/)
+### 🖿 [1st-semester](./1st-semester/)
 Initial coursework and basic algorithm implementations:
 * Computational methods (e.g., *Chorde method*, *Method2* - *Method5*)
 * Control works/tests (`KRs`) and contests (`contest1`)
 * Basic C++ programs (`bakic.cpp`, `simple shit`)
 
-### 📁 [2nd-semester](./2nd-semester/)
+### 🖿 [2nd-semester](./2nd-semester/)
 Continuation of studies and new disciplines:
 * Theoretical Informatics / TIP (`TIP`)
 * `RT1` assignments and temporary files for testing (`temp.cpp`)
 
-### 📁 [3rd-semester](./3rd-semester/)
+### 🖿 [3rd-semester](./3rd-semester/)
 Transition to core subjects and web development:
 * `BD_Industrial` — Industrial Databases
 * `C#` — C# projects and assignments
@@ -44,12 +44,12 @@ Transition to core subjects and web development:
 * `Front-Back-End` — Full-stack development basics
 * `TIP` — Course continuation
 
-### 📁 [4th-semester](./4th-semester/)
+### 🖿 [4th-semester](./4th-semester/)
 In-depth study of web technologies and server-side development:
 * `Frontend-backend` — Advanced full-stack development
 * `Server_App_Development_Technologies` — Backend and server application tech
 
-### 📁 [FreeCode](./FreeCode/)
+### 🖿 [FreeCode](./FreeCode/)
 Drafts, exam preparation, and personal code:
 * Exam preparation files (`EKZAMEN`, `EKZAMEN.cpp`)
 * Helper scripts and utilities (`help.cpp`, `main.js`)
