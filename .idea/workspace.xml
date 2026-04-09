@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="463d27de-1fcf-43e6-97ad-7a8bde661868" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Project_Mireacle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project_Mireacle.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,12 +17,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="SCSS File" />
         <option value="package.json" />
         <option value="HTTP Request" />
-        <option value="JavaScript File" />
         <option value="JSX File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -41,50 +43,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;HTTP Request.All in test.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.Test.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.main.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.task.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.task1.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.task1_04.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.task2.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.task3.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.task4.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.template.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.test.html.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Node.js.all.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.app.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.task1.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.task5.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.test.js.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.19.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.19.11&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/baabbabai/GitHub/bebebasbababoy&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;/home/baabbabai/.nvm/versions/node/v22.19.0/bin/node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "HTTP Request.All in test.executor": "Run",
+    "JavaScript Debug.Test.html.executor": "Debug",
+    "JavaScript Debug.index.html (1).executor": "Run",
+    "JavaScript Debug.index.html.executor": "Debug",
+    "JavaScript Debug.main.html.executor": "Debug",
+    "JavaScript Debug.task.html.executor": "Debug",
+    "JavaScript Debug.task1.html.executor": "Run",
+    "JavaScript Debug.task1_04.html.executor": "Debug",
+    "JavaScript Debug.task2.html.executor": "Debug",
+    "JavaScript Debug.task3.html.executor": "Debug",
+    "JavaScript Debug.task4.html.executor": "Debug",
+    "JavaScript Debug.template.html.executor": "Debug",
+    "JavaScript Debug.test.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.all.executor": "Run",
+    "Node.js.app.js.executor": "Run",
+    "Node.js.index.js.executor": "Debug",
+    "Node.js.main.js.executor": "Run",
+    "Node.js.task1.js.executor": "Run",
+    "Node.js.task5.js.executor": "Run",
+    "Node.js.test.js.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "22.19.0",
+    "javascript.nodejs.core.library.typings.version": "22.19.17",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/baabbabai/GitHub/Project_Mireacle/4th-semester/Frontend-backend/Pr16",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/home/baabbabai/.nvm/versions/node/v22.19.0/bin/node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr16" />
+      <recent name="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr15" />
+      <recent name="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr14" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr3/backend" />
     </key>
@@ -102,8 +114,11 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.index.js">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
     <configuration name="All in test" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr2/test.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Project_Mireacle/4th-semester/Frontend-backend/Pr14/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Project_Mireacle/4th-semester/Frontend-backend/Pr1/index.html" useBuiltInWebServerPort="true">
@@ -123,6 +138,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="Node.js.index.js" />
         <item itemvalue="Node.js.app.js" />
         <item itemvalue="HTTP Request.All in test" />
@@ -133,7 +149,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28539.21" />
+        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274" />
       </set>
     </attachedChunks>
   </component>
@@ -161,6 +177,7 @@
       <workItem from="1772365593099" duration="9408000" />
       <workItem from="1772487046262" duration="1928000" />
       <workItem from="1772871147568" duration="5000" />
+      <workItem from="1775721072385" duration="2743000" />
     </task>
     <servers />
   </component>

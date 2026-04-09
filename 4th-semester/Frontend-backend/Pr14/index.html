@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список дел (Офлайн)</title>
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#4285f4">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <style>
+        body { padding: 2rem; }
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .delete-btn { color: red; cursor: pointer; background: none; border: none; font-size: 1.2rem;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Мои задачи</h1>
+    <form id="todo-form" class="row">
+        <input class="col-9" type="text" id="todo-input" placeholder="Что нужно сделать?" required>
+        <button class="col-3 primary" type="submit">Добавить</button>
+    </form>
+    <ul id="todo-list"></ul>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
