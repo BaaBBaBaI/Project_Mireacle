@@ -28,16 +28,25 @@ loadContent('home');
 function initNotes() {
     const form = document.getElementById('note-form');
     const input = document.getElementById('note-input');
+    const reminderForm = document.getElementById('reminder-form');
+    const reminderText = document.getElementById('reminder-text');
+    const reminderTime = document.getElementById('reminder-time');
     const list = document.getElementById('notes-list');
 
     function loadNotes() {
         const notes = JSON.parse(localStorage.getItem('notes') || '[]');
-        list.innerHTML = notes.map((note, index) =>
-            `<li class="card" style="margin-bottom: 0.5rem; padding: 1rem; display: flex; justify-content: space-between;">
-                ${note.text || note}
+        list.innerHTML = notes.map((note, index) => {
+            const text = note.text || note;
+            let reminderInfo = '';
+            if (note.reminder) {
+                const date = new Date(note.reminder);
+                reminderInfo = `<br><small style="color: #666;">⏲ Напоминание: ${date.toLocaleString()}</small>`;
+            }
+            return `<li class="card" style="margin-bottom: 0.5rem; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                <div>${text}${reminderInfo}</div>
                 <button onclick="deleteNote(${index})" style="background:none; border:none; color:red; cursor:pointer;">✖</button>
-            </li>`
-        ).join('');
+            </li>`;
+        }).join('');
     }
 
     window.deleteNote = function(index) {
@@ -47,21 +56,51 @@ function initNotes() {
         loadNotes();
     }
 
-    function addNote(text) {
+    function addNote(text, reminderTimestamp = null) {
         const notes = JSON.parse(localStorage.getItem('notes') || '[]');
-        const newNote = { id: Date.now(), text: text };
+        const newNote = { id: Date.now(), text: text, reminder: reminderTimestamp };
         notes.push(newNote);
         localStorage.setItem('notes', JSON.stringify(notes));
         loadNotes();
 
-        socket.emit('newTask', newNote);
+        if (reminderTimestamp) {
+            socket.emit('newReminder', {
+                id: newNote.id,
+                text: text,
+                reminderTime: reminderTimestamp
+            });
+        } else {
+            socket.emit('newTask', newNote);
+        }
     }
 
-    form.onsubmit = (e) => {
-        e.preventDefault();
-        const text = input.value.trim();
-        if (text) { addNote(text); input.value = ''; }
-    };
+
+    if (form) {
+        form.onsubmit = (e) => {
+            e.preventDefault();
+            const text = input.value.trim();
+            if (text) { addNote(text); input.value = ''; }
+        };
+    }
+
+    if (reminderForm) {
+        reminderForm.onsubmit = (e) => {
+            e.preventDefault();
+            const text = reminderText.value.trim();
+            const datetime = reminderTime.value;
+
+            if (text && datetime) {
+                const timestamp = new Date(datetime).getTime();
+                if (timestamp > Date.now()) {
+                    addNote(text, timestamp);
+                    reminderText.value = '';
+                    reminderTime.value = '';
+                } else {
+                    alert('Дата напоминания должна быть в будущем');
+                }
+            }
+        };
+    }
 
     loadNotes();
 }
@@ -153,3 +192,26 @@ if ('serviceWorker' in navigator) {
         } catch (err) { console.error('Ошибка SW:', err); }
     });
 }
+
+socket.on('reminderSnoozed', (data) => {
+    console.log('Напоминание отложено, обновляем UI:', data);
+
+
+    const notes = JSON.parse(localStorage.getItem('notes') || '[]');
+
+
+    const noteToUpdate = notes.find(n => n.id === data.id);
+
+    if (noteToUpdate) {
+
+        noteToUpdate.reminder = data.newTime;
+        localStorage.setItem('notes', JSON.stringify(notes));
+
+
+        if (document.getElementById('notes-list')) {
+
+            loadContent('home');
+        }
+    }
+});
+

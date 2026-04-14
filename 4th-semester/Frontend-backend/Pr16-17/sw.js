@@ -83,3 +83,53 @@ self.addEventListener('fetch', event => {
         );
     }
 });
+
+self.addEventListener('push', (event) => {
+    let data = { title: 'Новое уведомление', body: '...' };
+
+    if (event.data) {
+        try {
+            data = event.data.json();
+        } catch(e) {
+            data.body = event.data.text();
+        }
+    }
+
+    const options = {
+        body: data.body,
+        icon: '/icons/android-chrome-192x192.png',
+        badge: '/icons/android-chrome-192x192.png'
+    };
+
+    if (data.reminderId) {
+        options.data = { reminderId: data.reminderId };
+        options.actions = [
+            { action: 'snooze', title: 'Отложить на 5 минут' }
+        ];
+    }
+
+    event.waitUntil(
+        self.registration.showNotification(data.title, options)
+    );
+});
+
+self.addEventListener('notificationclick', (event) => {
+    const notification = event.notification;
+    const action = event.action;
+
+    if (action === 'snooze') {
+        const reminderId = notification.data?.reminderId;
+        if (reminderId) {
+            event.waitUntil(
+                fetch(`/snooze?reminderId=${reminderId}`, { method: 'POST' })
+                    .then(() => notification.close())
+                    .catch(err => console.error('Snooze failed:', err))
+            );
+        } else {
+            notification.close();
+
+        }
+    } else {
+        notification.close();
+    }
+});

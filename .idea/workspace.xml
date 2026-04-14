@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="463d27de-1fcf-43e6-97ad-7a8bde661868" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Project_Mireacle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project_Mireacle.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr16/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr16/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr16/content/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr16/content/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr16/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr16/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr16/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr16/sw.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,54 +45,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "HTTP Request.All in test.executor": "Run",
-    "JavaScript Debug.Test.html.executor": "Debug",
-    "JavaScript Debug.index.html (1).executor": "Run",
-    "JavaScript Debug.index.html.executor": "Debug",
-    "JavaScript Debug.main.html.executor": "Debug",
-    "JavaScript Debug.task.html.executor": "Debug",
-    "JavaScript Debug.task1.html.executor": "Run",
-    "JavaScript Debug.task1_04.html.executor": "Debug",
-    "JavaScript Debug.task2.html.executor": "Debug",
-    "JavaScript Debug.task3.html.executor": "Debug",
-    "JavaScript Debug.task4.html.executor": "Debug",
-    "JavaScript Debug.template.html.executor": "Debug",
-    "JavaScript Debug.test.html.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js.all.executor": "Run",
-    "Node.js.app.js.executor": "Run",
-    "Node.js.index.js.executor": "Debug",
-    "Node.js.main.js.executor": "Run",
-    "Node.js.task1.js.executor": "Run",
-    "Node.js.task5.js.executor": "Run",
-    "Node.js.test.js.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "javascript.nodejs.core.library.configured.version": "22.19.0",
-    "javascript.nodejs.core.library.typings.version": "22.19.17",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/baabbabai/GitHub/Project_Mireacle/4th-semester/Frontend-backend/Pr16",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/home/baabbabai/.nvm/versions/node/v22.19.0/bin/node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "watcher.settings",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;HTTP Request.All in test.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Test.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.index.html (1).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.main.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.task.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.task1.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.task1_04.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.task2.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.task3.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.task4.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.template.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.test.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.all.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.app.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.index.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.task1.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.task5.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.test.js.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.19.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.19.17&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/baabbabai/GitHub/Project_Mireacle/4th-semester/Frontend-backend/Pr16&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/home/baabbabai/.nvm/versions/node/v22.19.0/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/593/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr16" />
@@ -177,7 +180,9 @@
       <workItem from="1772365593099" duration="9408000" />
       <workItem from="1772487046262" duration="1928000" />
       <workItem from="1772871147568" duration="5000" />
-      <workItem from="1775721072385" duration="2743000" />
+      <workItem from="1775721072385" duration="3177000" />
+      <workItem from="1776160059711" duration="3933000" />
+      <workItem from="1776164356527" duration="634000" />
     </task>
     <servers />
   </component>
