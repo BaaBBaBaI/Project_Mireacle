@@ -129,53 +129,53 @@ proxy_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/proxy_server.dir/build.make CMakeFiles/proxy_server.dir/build
 .PHONY : proxy_server/fast
 
-cacheManager.o: cacheManager.cpp.o
-.PHONY : cacheManager.o
+src/cacheManager.o: src/cacheManager.cpp.o
+.PHONY : src/cacheManager.o
 
 # target to build an object file
-cacheManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proxy_server.dir/build.make CMakeFiles/proxy_server.dir/cacheManager.cpp.o
-.PHONY : cacheManager.cpp.o
+src/cacheManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proxy_server.dir/build.make CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o
+.PHONY : src/cacheManager.cpp.o
 
-cacheManager.i: cacheManager.cpp.i
-.PHONY : cacheManager.i
+src/cacheManager.i: src/cacheManager.cpp.i
+.PHONY : src/cacheManager.i
 
 # target to preprocess a source file
-cacheManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proxy_server.dir/build.make CMakeFiles/proxy_server.dir/cacheManager.cpp.i
-.PHONY : cacheManager.cpp.i
+src/cacheManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proxy_server.dir/build.make CMakeFiles/proxy_server.dir/src/cacheManager.cpp.i
+.PHONY : src/cacheManager.cpp.i
 
-cacheManager.s: cacheManager.cpp.s
-.PHONY : cacheManager.s
+src/cacheManager.s: src/cacheManager.cpp.s
+.PHONY : src/cacheManager.s
 
 # target to generate assembly for a file
-cacheManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proxy_server.dir/build.make CMakeFiles/proxy_server.dir/cacheManager.cpp.s
-.PHONY : cacheManager.cpp.s
+src/cacheManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proxy_server.dir/build.make CMakeFiles/proxy_server.dir/src/cacheManager.cpp.s
+.PHONY : src/cacheManager.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proxy_server.dir/build.make CMakeFiles/proxy_server.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proxy_server.dir/build.make CMakeFiles/proxy_server.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proxy_server.dir/build.make CMakeFiles/proxy_server.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proxy_server.dir/build.make CMakeFiles/proxy_server.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/proxy_server.dir/build.make CMakeFiles/proxy_server.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proxy_server.dir/build.make CMakeFiles/proxy_server.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... proxy_server"
-	@echo "... cacheManager.o"
-	@echo "... cacheManager.i"
-	@echo "... cacheManager.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/cacheManager.o"
+	@echo "... src/cacheManager.i"
+	@echo "... src/cacheManager.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

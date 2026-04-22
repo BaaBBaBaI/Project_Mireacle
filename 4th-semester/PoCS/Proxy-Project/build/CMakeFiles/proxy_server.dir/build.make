@@ -72,44 +72,44 @@ include CMakeFiles/proxy_server.dir/flags.make
 CMakeFiles/proxy_server.dir/codegen:
 .PHONY : CMakeFiles/proxy_server.dir/codegen
 
-CMakeFiles/proxy_server.dir/main.cpp.o: CMakeFiles/proxy_server.dir/flags.make
-CMakeFiles/proxy_server.dir/main.cpp.o: /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/main.cpp
-CMakeFiles/proxy_server.dir/main.cpp.o: CMakeFiles/proxy_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/proxy_server.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proxy_server.dir/main.cpp.o -MF CMakeFiles/proxy_server.dir/main.cpp.o.d -o CMakeFiles/proxy_server.dir/main.cpp.o -c /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/main.cpp
+CMakeFiles/proxy_server.dir/src/main.cpp.o: CMakeFiles/proxy_server.dir/flags.make
+CMakeFiles/proxy_server.dir/src/main.cpp.o: /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/src/main.cpp
+CMakeFiles/proxy_server.dir/src/main.cpp.o: CMakeFiles/proxy_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/proxy_server.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proxy_server.dir/src/main.cpp.o -MF CMakeFiles/proxy_server.dir/src/main.cpp.o.d -o CMakeFiles/proxy_server.dir/src/main.cpp.o -c /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/src/main.cpp
 
-CMakeFiles/proxy_server.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proxy_server.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/main.cpp > CMakeFiles/proxy_server.dir/main.cpp.i
+CMakeFiles/proxy_server.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proxy_server.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/src/main.cpp > CMakeFiles/proxy_server.dir/src/main.cpp.i
 
-CMakeFiles/proxy_server.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proxy_server.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/main.cpp -o CMakeFiles/proxy_server.dir/main.cpp.s
+CMakeFiles/proxy_server.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proxy_server.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/src/main.cpp -o CMakeFiles/proxy_server.dir/src/main.cpp.s
 
-CMakeFiles/proxy_server.dir/cacheManager.cpp.o: CMakeFiles/proxy_server.dir/flags.make
-CMakeFiles/proxy_server.dir/cacheManager.cpp.o: /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/cacheManager.cpp
-CMakeFiles/proxy_server.dir/cacheManager.cpp.o: CMakeFiles/proxy_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/proxy_server.dir/cacheManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proxy_server.dir/cacheManager.cpp.o -MF CMakeFiles/proxy_server.dir/cacheManager.cpp.o.d -o CMakeFiles/proxy_server.dir/cacheManager.cpp.o -c /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/cacheManager.cpp
+CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o: CMakeFiles/proxy_server.dir/flags.make
+CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o: /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/src/cacheManager.cpp
+CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o: CMakeFiles/proxy_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o -MF CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o.d -o CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o -c /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/src/cacheManager.cpp
 
-CMakeFiles/proxy_server.dir/cacheManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proxy_server.dir/cacheManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/cacheManager.cpp > CMakeFiles/proxy_server.dir/cacheManager.cpp.i
+CMakeFiles/proxy_server.dir/src/cacheManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proxy_server.dir/src/cacheManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/src/cacheManager.cpp > CMakeFiles/proxy_server.dir/src/cacheManager.cpp.i
 
-CMakeFiles/proxy_server.dir/cacheManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proxy_server.dir/cacheManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/cacheManager.cpp -o CMakeFiles/proxy_server.dir/cacheManager.cpp.s
+CMakeFiles/proxy_server.dir/src/cacheManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proxy_server.dir/src/cacheManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/src/cacheManager.cpp -o CMakeFiles/proxy_server.dir/src/cacheManager.cpp.s
 
 # Object files for target proxy_server
 proxy_server_OBJECTS = \
-"CMakeFiles/proxy_server.dir/main.cpp.o" \
-"CMakeFiles/proxy_server.dir/cacheManager.cpp.o"
+"CMakeFiles/proxy_server.dir/src/main.cpp.o" \
+"CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o"
 
 # External object files for target proxy_server
 proxy_server_EXTERNAL_OBJECTS =
 
-proxy_server: CMakeFiles/proxy_server.dir/main.cpp.o
-proxy_server: CMakeFiles/proxy_server.dir/cacheManager.cpp.o
+proxy_server: CMakeFiles/proxy_server.dir/src/main.cpp.o
+proxy_server: CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o
 proxy_server: CMakeFiles/proxy_server.dir/build.make
 proxy_server: CMakeFiles/proxy_server.dir/compiler_depend.ts
 proxy_server: CMakeFiles/proxy_server.dir/link.txt

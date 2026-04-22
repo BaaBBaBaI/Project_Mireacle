@@ -20,8 +20,8 @@ target_include_directories(proxy_server PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/incl
 
 
 target_sources(proxy_server PRIVATE
-    main.cpp
-    cacheManager.cpp
+    src/main.cpp
+    src/cacheManager.cpp
     
 )
 

@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/cacheManager.cpp" "CMakeFiles/proxy_server.dir/cacheManager.cpp.o" "gcc" "CMakeFiles/proxy_server.dir/cacheManager.cpp.o.d"
-  "/home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/main.cpp" "CMakeFiles/proxy_server.dir/main.cpp.o" "gcc" "CMakeFiles/proxy_server.dir/main.cpp.o.d"
+  "/home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/src/cacheManager.cpp" "CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o" "gcc" "CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o.d"
+  "/home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/src/main.cpp" "CMakeFiles/proxy_server.dir/src/main.cpp.o" "gcc" "CMakeFiles/proxy_server.dir/src/main.cpp.o.d"
   "" "proxy_server" "gcc" "CMakeFiles/proxy_server.dir/link.d"
   )
 

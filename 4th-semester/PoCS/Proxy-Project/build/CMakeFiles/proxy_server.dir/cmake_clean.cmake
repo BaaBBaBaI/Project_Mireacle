@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/proxy_server.dir/link.d"
-  "CMakeFiles/proxy_server.dir/cacheManager.cpp.o"
-  "CMakeFiles/proxy_server.dir/cacheManager.cpp.o.d"
-  "CMakeFiles/proxy_server.dir/main.cpp.o"
-  "CMakeFiles/proxy_server.dir/main.cpp.o.d"
+  "CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o"
+  "CMakeFiles/proxy_server.dir/src/cacheManager.cpp.o.d"
+  "CMakeFiles/proxy_server.dir/src/main.cpp.o"
+  "CMakeFiles/proxy_server.dir/src/main.cpp.o.d"
   "proxy_server"
   "proxy_server.pdb"
 )
