@@ -1,0 +1,3 @@
+/home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/build/CMakeFiles/proxy_server.dir
+/home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/build/CMakeFiles/edit_cache.dir
+/home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project/build/CMakeFiles/rebuild_cache.dir
