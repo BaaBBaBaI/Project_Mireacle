@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="463d27de-1fcf-43e6-97ad-7a8bde661868" name="Changes" comment="" />
+    <list default="true" id="463d27de-1fcf-43e6-97ad-7a8bde661868" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr13-16.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr13-17.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr22/haproxy.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr22/haproxy.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4th-semester/Frontend-backend/Pr3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4th-semester/PoCS/Proxy-Project/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +157,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.24374.125" />
       </set>
     </attachedChunks>
   </component>
@@ -177,6 +188,7 @@
       <workItem from="1775721072385" duration="3177000" />
       <workItem from="1776160059711" duration="3933000" />
       <workItem from="1776164356527" duration="2070000" />
+      <workItem from="1779716782491" duration="22000" />
     </task>
     <servers />
   </component>

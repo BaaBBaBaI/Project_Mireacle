@@ -1,0 +1,8 @@
+export default function Home() {
+  return (
+    <div>
+      <h1>Главная страница</h1>
+      <p>Основной бандл загружен.</p>
+    </div>
+  );
+}
