@@ -11,6 +11,4 @@ class Product(Base):
     price = Column(Float)
     count = Column(Integer)
     
-    # ВНИМАНИЕ для 9.1: Сначала оставьте эту строку закомментированной. 
-    # Раскомментируйте её перед созданием второй миграции.
     # description = Column(String, nullable=False, server_default="No description")
