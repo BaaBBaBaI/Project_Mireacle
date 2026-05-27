@@ -7,14 +7,12 @@ fake = Faker()
 
 @pytest.fixture(autouse=True)
 def reset_db():
-    """Обеспечиваем чистое состояние между тестами [cite: 137]"""
     db.clear()
     yield
 
 @pytest.mark.asyncio
 async def test_create_user():
-    """Создание пользователя (201) [cite: 127]"""
-    async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as ac:
+    AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as ac:
         payload = {"username": fake.user_name(), "age": fake.random_int(min=19, max=99)}
         response = await ac.post("/users", json=payload)
         
@@ -26,7 +24,6 @@ async def test_create_user():
 
 @pytest.mark.asyncio
 async def test_get_existing_user():
-    """Получение существующего пользователя (200) [cite: 128]"""
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as ac:
         payload = {"username": fake.user_name(), "age": 25}
         create_res = await ac.post("/users", json=payload)
@@ -38,14 +35,12 @@ async def test_get_existing_user():
 
 @pytest.mark.asyncio
 async def test_get_nonexistent_user():
-    """Попытка получить несуществующего пользователя (404) [cite: 129]"""
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as ac:
         response = await ac.get("/users/999")
         assert response.status_code == 404
 
 @pytest.mark.asyncio
 async def test_delete_existing_user():
-    """Удаление существующего пользователя (204) [cite: 130]"""
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as ac:
         payload = {"username": fake.user_name(), "age": 30}
         create_res = await ac.post("/users", json=payload)
@@ -56,7 +51,6 @@ async def test_delete_existing_user():
 
 @pytest.mark.asyncio
 async def test_delete_already_deleted_user():
-    """Повторное удаление того же пользователя (404) [cite: 131]"""
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as ac:
         payload = {"username": fake.user_name(), "age": 30}
         create_res = await ac.post("/users", json=payload)
