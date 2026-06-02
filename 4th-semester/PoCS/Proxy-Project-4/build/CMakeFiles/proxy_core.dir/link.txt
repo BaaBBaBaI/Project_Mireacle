@@ -1,0 +1,2 @@
+/usr/bin/ar qc libproxy_core.a CMakeFiles/proxy_core.dir/src/Config.cpp.o CMakeFiles/proxy_core.dir/src/Logger.cpp.o CMakeFiles/proxy_core.dir/src/ThreadPool.cpp.o CMakeFiles/proxy_core.dir/src/LRUPolicy.cpp.o CMakeFiles/proxy_core.dir/src/FIFOPolicy.cpp.o CMakeFiles/proxy_core.dir/src/CacheManager.cpp.o CMakeFiles/proxy_core.dir/src/HttpRequest.cpp.o CMakeFiles/proxy_core.dir/src/HttpResponse.cpp.o CMakeFiles/proxy_core.dir/src/ConnectionHandler.cpp.o CMakeFiles/proxy_core.dir/src/ProxyServer.cpp.o
+/usr/bin/ranlib libproxy_core.a

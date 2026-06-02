@@ -1,0 +1,5 @@
+# Corporate HTTP Caching Proxy Configuration
+port=8080
+threads=16
+cache_limit_mb=50
+policy=LRU

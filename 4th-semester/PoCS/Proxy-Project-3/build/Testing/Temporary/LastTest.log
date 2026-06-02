@@ -1,0 +1,174 @@
+Start testing: May 31 17:00 MSK
+----------------------------------------------------------
+1/2 Testing: ProxyUnitTests
+1/2 Test: ProxyUnitTests
+Command: "/home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project-3/build/tests/unit_tests"
+Directory: /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project-3/build/tests
+"ProxyUnitTests" start time: May 31 17:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project-3/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 47 tests from 6 test suites.
+[----------] Global test environment set-up.
+[----------] 7 tests from ConfigTest
+[ RUN      ] ConfigTest.DefaultValues
+[       OK ] ConfigTest.DefaultValues (0 ms)
+[ RUN      ] ConfigTest.LoadMissingFileDefaults
+[CONFIG] Could not open config file: missing_file_that_does_not_exist.txt. Using defaults.
+[       OK ] ConfigTest.LoadMissingFileDefaults (0 ms)
+[ RUN      ] ConfigTest.LoadValidConfig
+[       OK ] ConfigTest.LoadValidConfig (0 ms)
+[ RUN      ] ConfigTest.ParseInvalidPort
+[       OK ] ConfigTest.ParseInvalidPort (0 ms)
+[ RUN      ] ConfigTest.ParseInvalidThreads
+[       OK ] ConfigTest.ParseInvalidThreads (0 ms)
+[ RUN      ] ConfigTest.SettersAndGetters
+[       OK ] ConfigTest.SettersAndGetters (0 ms)
+[ RUN      ] ConfigTest.CommentHandling
+[       OK ] ConfigTest.CommentHandling (0 ms)
+[----------] 7 tests from ConfigTest (0 ms total)
+
+[----------] 7 tests from LRUPolicyTest
+[ RUN      ] LRUPolicyTest.LRU_EmptyEvict
+[       OK ] LRUPolicyTest.LRU_EmptyEvict (0 ms)
+[ RUN      ] LRUPolicyTest.LRU_SingleItem
+[       OK ] LRUPolicyTest.LRU_SingleItem (0 ms)
+[ RUN      ] LRUPolicyTest.LRU_EvictionOrder
+[       OK ] LRUPolicyTest.LRU_EvictionOrder (0 ms)
+[ RUN      ] LRUPolicyTest.LRU_TouchReorder
+[       OK ] LRUPolicyTest.LRU_TouchReorder (0 ms)
+[ RUN      ] LRUPolicyTest.LRU_EraseItem
+[       OK ] LRUPolicyTest.LRU_EraseItem (0 ms)
+[ RUN      ] LRUPolicyTest.LRU_DoubleInsert
+[       OK ] LRUPolicyTest.LRU_DoubleInsert (0 ms)
+[ RUN      ] LRUPolicyTest.LRU_Name
+[       OK ] LRUPolicyTest.LRU_Name (0 ms)
+[----------] 7 tests from LRUPolicyTest (0 ms total)
+
+[----------] 7 tests from FIFOPolicyTest
+[ RUN      ] FIFOPolicyTest.FIFO_EmptyEvict
+[       OK ] FIFOPolicyTest.FIFO_EmptyEvict (0 ms)
+[ RUN      ] FIFOPolicyTest.FIFO_SingleItem
+[       OK ] FIFOPolicyTest.FIFO_SingleItem (0 ms)
+[ RUN      ] FIFOPolicyTest.FIFO_EvictionOrder
+[       OK ] FIFOPolicyTest.FIFO_EvictionOrder (0 ms)
+[ RUN      ] FIFOPolicyTest.FIFO_TouchDoesNotReorder
+[       OK ] FIFOPolicyTest.FIFO_TouchDoesNotReorder (0 ms)
+[ RUN      ] FIFOPolicyTest.FIFO_EraseItem
+[       OK ] FIFOPolicyTest.FIFO_EraseItem (0 ms)
+[ RUN      ] FIFOPolicyTest.FIFO_DoubleInsert
+[       OK ] FIFOPolicyTest.FIFO_DoubleInsert (0 ms)
+[ RUN      ] FIFOPolicyTest.FIFO_Name
+[       OK ] FIFOPolicyTest.FIFO_Name (0 ms)
+[----------] 7 tests from FIFOPolicyTest (0 ms total)
+
+[----------] 7 tests from CacheManagerTest
+[ RUN      ] CacheManagerTest.SingletonUniqueness
+[       OK ] CacheManagerTest.SingletonUniqueness (0 ms)
+[ RUN      ] CacheManagerTest.CachePutGet
+[       OK ] CacheManagerTest.CachePutGet (0 ms)
+[ RUN      ] CacheManagerTest.CacheMiss
+[       OK ] CacheManagerTest.CacheMiss (0 ms)
+[ RUN      ] CacheManagerTest.CacheEvictionLRU
+[       OK ] CacheManagerTest.CacheEvictionLRU (1 ms)
+[ RUN      ] CacheManagerTest.CacheEvictionFIFO
+[       OK ] CacheManagerTest.CacheEvictionFIFO (0 ms)
+[ RUN      ] CacheManagerTest.CacheClear
+[       OK ] CacheManagerTest.CacheClear (0 ms)
+[ RUN      ] CacheManagerTest.ExceedsLimitOnFirstInsert
+[       OK ] CacheManagerTest.ExceedsLimitOnFirstInsert (0 ms)
+[----------] 7 tests from CacheManagerTest (3 ms total)
+
+[----------] 12 tests from HttpParserTest
+[ RUN      ] HttpParserTest.Request_ValidGet
+[       OK ] HttpParserTest.Request_ValidGet (0 ms)
+[ RUN      ] HttpParserTest.Request_ValidConnect
+[       OK ] HttpParserTest.Request_ValidConnect (0 ms)
+[ RUN      ] HttpParserTest.Request_AbsoluteUrlGet
+[       OK ] HttpParserTest.Request_AbsoluteUrlGet (0 ms)
+[ RUN      ] HttpParserTest.Request_Invalid
+[       OK ] HttpParserTest.Request_Invalid (0 ms)
+[ RUN      ] HttpParserTest.Request_HeaderCaseInsensitive
+[       OK ] HttpParserTest.Request_HeaderCaseInsensitive (0 ms)
+[ RUN      ] HttpParserTest.Request_ToRawString
+[       OK ] HttpParserTest.Request_ToRawString (0 ms)
+[ RUN      ] HttpParserTest.Response_Valid
+[       OK ] HttpParserTest.Response_Valid (0 ms)
+[ RUN      ] HttpParserTest.Response_Invalid
+[       OK ] HttpParserTest.Response_Invalid (0 ms)
+[ RUN      ] HttpParserTest.Response_IsCacheableStandard
+[       OK ] HttpParserTest.Response_IsCacheableStandard (0 ms)
+[ RUN      ] HttpParserTest.Response_IsCacheableNon200
+[       OK ] HttpParserTest.Response_IsCacheableNon200 (0 ms)
+[ RUN      ] HttpParserTest.Response_IsCacheableNoStore
+[       OK ] HttpParserTest.Response_IsCacheableNoStore (0 ms)
+[ RUN      ] HttpParserTest.Response_IsCacheablePragma
+[       OK ] HttpParserTest.Response_IsCacheablePragma (0 ms)
+[----------] 12 tests from HttpParserTest (0 ms total)
+
+[----------] 7 tests from ThreadPoolTest
+[ RUN      ] ThreadPoolTest.InitAndWorkersCount
+[       OK ] ThreadPoolTest.InitAndWorkersCount (0 ms)
+[ RUN      ] ThreadPoolTest.ExecuteSingleTask
+[       OK ] ThreadPoolTest.ExecuteSingleTask (0 ms)
+[ RUN      ] ThreadPoolTest.ExecuteMultipleTasks
+[       OK ] ThreadPoolTest.ExecuteMultipleTasks (50 ms)
+[ RUN      ] ThreadPoolTest.QueueSizeTracking
+[       OK ] ThreadPoolTest.QueueSizeTracking (61 ms)
+[ RUN      ] ThreadPoolTest.GracefulShutdown
+[       OK ] ThreadPoolTest.GracefulShutdown (51 ms)
+[ RUN      ] ThreadPoolTest.ReentrantEnqueues
+[       OK ] ThreadPoolTest.ReentrantEnqueues (50 ms)
+[ RUN      ] ThreadPoolTest.StressEnqueue
+[       OK ] ThreadPoolTest.StressEnqueue (102 ms)
+[----------] 7 tests from ThreadPoolTest (316 ms total)
+
+[----------] Global test environment tear-down
+[==========] 47 tests from 6 test suites ran. (320 ms total)
+[  PASSED  ] 47 tests.
+<end of output>
+Test time =   0.32 sec
+----------------------------------------------------------
+Test Passed.
+"ProxyUnitTests" end time: May 31 17:00 MSK
+"ProxyUnitTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: ProxyScenarioTests
+2/2 Test: ProxyScenarioTests
+Command: "/home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project-3/build/tests/scenario_tests"
+Directory: /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project-3/build/tests
+"ProxyScenarioTests" start time: May 31 17:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/baabbabai/GitHub/Project_Mireacle/4th-semester/PoCS/Proxy-Project-3/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from ProxyIntegrationScenario
+[ RUN      ] ProxyIntegrationScenario.ClassicCacheWorkflow
+[       OK ] ProxyIntegrationScenario.ClassicCacheWorkflow (0 ms)
+[ RUN      ] ProxyIntegrationScenario.MultiThreadedStressAccess
+[       OK ] ProxyIntegrationScenario.MultiThreadedStressAccess (0 ms)
+[ RUN      ] ProxyIntegrationScenario.EndToEndSocketProxyCaching
+[2026-05-31 17:00:37] [THREAD-134482437875584] [INFO] Cache manager initialized with policy: LRU
+[2026-05-31 17:00:37] [THREAD-134482437875584] [INFO] Cache size limit set to: 5 MB
+[2026-05-31 17:00:37] [THREAD-134482437875584] [INFO] Thread Pool initialized with 4 worker threads
+[2026-05-31 17:00:37] [THREAD-134482437875584] [INFO] Corporate Proxy Server successfully started on port 19002
+[2026-05-31 17:00:37] [THREAD-134482354988736] [MISS] Client: 127.0.0.1 | GET http://127.0.0.1:19001/test-resource (Status: 200)
+[2026-05-31 17:00:37] [THREAD-134482363381440] [HIT] Client: 127.0.0.1 | GET http://127.0.0.1:19001/test-resource
+[2026-05-31 17:00:38] [THREAD-134482437875584] [INFO] Proxy Server successfully stopped.
+[       OK ] ProxyIntegrationScenario.EndToEndSocketProxyCaching (1104 ms)
+[----------] 3 tests from ProxyIntegrationScenario (1104 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (1104 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   1.11 sec
+----------------------------------------------------------
+Test Passed.
+"ProxyScenarioTests" end time: May 31 17:00 MSK
+"ProxyScenarioTests" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: May 31 17:00 MSK

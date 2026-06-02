@@ -1,0 +1,5 @@
+build/
+Testing/
+Tempfile.txt
+.git/
+.gitignore
