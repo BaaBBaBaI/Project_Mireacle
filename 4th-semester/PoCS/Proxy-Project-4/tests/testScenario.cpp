@@ -137,7 +137,7 @@ TEST(ProxyIntegrationScenario, EndToEndSocketProxyCaching) {
     std::atomic<int> mockHits{0};
 
     std::thread mockServerThread(startMockServer, mockPort, std::ref(mockRunning), std::ref(mockHits));
-    std::this_thread::sleep_for(std::chrono::milliseconds(50)); // let server socket bind
+    std::this_thread::sleep_for(std::chrono::milliseconds(50)); // server socket bind
 
     Config cfg;
     cfg.setPort(proxyPort);
